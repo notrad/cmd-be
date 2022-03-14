@@ -18,28 +18,31 @@ import { AppointmentSchudleComponent } from './component/add-appointment/compone
 import { AppointmentConfirmationComponent } from './component/add-appointment/components/appointment-confirmation/appointment-confirmation.component';
 import { ViewFeedbackComponent } from './component/view-feedback/view-feedback.component';
 
+const COMPONENT = [
+  AppointmentTilesComponent,
+  ViewAllAppointmentComponent,
+  ViewAppointmentComponent,
+  ViewPatientComponent,
+  ViewDoctorComponent,
+  ViewEditCommentsComponent,
+  ViewEditRecommendationComponent,
+  ViewEditVitalsComponent,
+  ViewAllPrescriptionComponent,
+  AddEditPrescriptionComponent,
+  ViewEditTestComponent,
+  AddAppointmentComponent,
+  AppointmentSchudleComponent,
+  AppointmentConfirmationComponent,
+  ViewFeedbackComponent,
+];
 
 @NgModule({
   declarations: [
-    AppointmentTilesComponent,
-    ViewAllAppointmentComponent,
-    ViewAppointmentComponent,
-    ViewPatientComponent,
-    ViewDoctorComponent,
-    ViewEditCommentsComponent,
-    ViewEditRecommendationComponent,
-    ViewEditVitalsComponent,
-    ViewAllPrescriptionComponent,
-    AddEditPrescriptionComponent,
-    ViewEditTestComponent,
-    AddAppointmentComponent,
-    AppointmentSchudleComponent,
-    AppointmentConfirmationComponent,
-    ViewFeedbackComponent
+    ...COMPONENT
   ],
-  imports: [
-    CommonModule,
-    AppointmentsRoutingModule
+  imports: [CommonModule, AppointmentsRoutingModule],
+  exports: [
+    ...COMPONENT
   ]
 })
-export class AppointmentsModule { }
+export class AppointmentsModule {}
