@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './core/guards/auth.guard';
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   },
   {
     path:"cmd",
+    canActivate: [AuthGuard],
     loadChildren: () =>
     import("./cmd/cmd.module").then(
       (m) => m.CmdModule

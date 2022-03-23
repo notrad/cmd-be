@@ -1,0 +1,188 @@
+nav {
+  background-color: var(--primary-color);
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  text-align: right;
+
+  div {
+    a {
+      color: var(--white);
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  /* TO DO: dynamically calculate the height of the main section by subtracting the total height of the nav */
+  height: calc(100% - 44.9167px);
+
+  // login page image
+  .login-form-image {
+    display: none;
+  }
+
+  // login form styling
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+
+    .welcome-text {
+      color: var(--primary-color);
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-around;
+
+      // user email and password input styling
+      .credentials {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          text-align: center;
+          padding: 0.5rem;
+          border: none;
+          border-bottom: 2px solid var(--dark-grey);
+          margin-top: 1rem;
+          outline: none;
+
+          &::placeholder {
+            font-style: italic;
+            color: var(--grey);
+          }
+        }
+
+        .invalid-input{
+          border-color: var(--error-red);
+          &::placeholder {
+            color: var(--error-red);
+          }
+        }
+
+        button {
+          background-color: var(--primary-color);
+          color: var(--white);
+          margin-top: 2rem;
+          padding: 0.5rem;
+          width: 50%;
+          border-radius: 8px;
+          border: none;
+          margin-left: auto;
+          margin-right: auto;
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--secondary-color);
+          }
+
+          &:disabled {
+            background-color: var(--grey);
+          }
+
+          &:active {
+            background-color: var(--dark-grey);
+          }
+        }
+      }
+
+      .error-text {
+        color: var(--error-red);
+        font-size: small;
+        padding-top: 0.15rem;
+        text-align: center;
+      }
+    }
+  }
+
+  // User Role Toggle Container styling, radio buttons
+  .toggle-role {
+    display: flex;
+    flex-direction: column;
+
+    input[type=radio] {
+      display: none;
+    }
+
+    input[type="radio"]+label {
+      color: var(--grey);
+      text-align: right;
+      font-style: italic;
+      padding: 0.3rem;
+      font-size: small;
+      color: var(--grey);
+
+      &:hover {
+        color: var(--secondary-color);
+        cursor: pointer;
+      }
+    }
+
+    input[type="radio"]:checked+label {
+      color: var(--primary-color);
+    }
+  }
+}
+
+
+/* =================================== mobile styles ========================================= */
+
+// mobile devices with small screen size and above
+@media (min-width: 321px) {}
+
+// mobile devices with medium screen size and above
+@media (min-width: 376px) {}
+
+// mobile devices with large screen size and above
+@media (min-width: 426px) {
+  main {
+    display: flex;
+
+    .login-form-image {
+      display: block;
+      flex: 50%;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    .login-form-container {
+      flex: 50%;
+    }
+  }
+}
+
+// tablets and above
+@media (min-width: 769px) {
+  nav {
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  main {
+    max-width: 80vw;
+    margin: auto;
+
+    .login-form-image>img {
+      min-width: 100%;
+      height: 100%;
+    }
+  }
+
+}
+
+// laptops & desktops
+@media (min-width: 1025px) {}
+
+// devices with larger screen (eg: smart tv's)
+@media (min-width: 1441px) {}

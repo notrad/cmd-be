@@ -5,6 +5,7 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { TopHeaderComponent } from './components/top-header/top-header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LandingScreenComponent } from './components/landing-screen/landing-screen.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const COMPONENTS =[
   TopHeaderComponent,
@@ -19,7 +20,9 @@ const COMPONENTS =[
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     ...COMPONENTS

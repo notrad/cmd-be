@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #18385c;
+    --secondary-color: #4e6c84;
+    --white: #ffffff;
+    --grey: #b9c3ce;
+    --dark-grey: #888888;
+    --error-red: #ff4141;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before,
+*:after,
+*:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto';
+}

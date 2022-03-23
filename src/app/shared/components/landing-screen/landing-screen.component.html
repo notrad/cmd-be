@@ -1,1 +1,41 @@
-<p>landing-screen works!</p>
+<nav>
+  <div><a routerLink="/login">Sign Up</a></div>
+</nav>
+<main>
+  <div class="login-form-image">
+    <img src="https://dummyimage.com/516x534/4e6c84/ffffff.png&text=+CMD" alt="cmd login page image">
+  </div>
+
+  <div class="login-form-container">
+    <h3 class="welcome-text">{{ loginForm.value.role == 'doctor' ? welcomeHeadingDoctor : welcomeHeadingPatient }}</h3>
+    <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmission(loginForm)">
+      <div class="credentials">
+        <div *ngIf="formSubmitted && credentialError" class="error-text">
+            {{ credentialErrorMessage }}
+        </div>
+        <input type="email" name="email" id="email" [placeholder]="emailPlaceholder" formControlName="email" required [ngClass]="{ 'invalid-input': formSubmitted && email?.errors }">
+          <div *ngIf="formSubmitted && email?.errors" class="error-text">
+          <div *ngIf="formSubmitted && email?.errors?.['pattern']" class="error-text">
+            Please provide a valid email address.
+          </div>
+        </div>
+        <input type="password" name="password" id="password" [placeholder]="passwordPlaceholder" formControlName="password" [ngClass]="{ 'invalid-input': formSubmitted && password?.errors }" required>
+        <button type="submit" [disabled]="loginForm.invalid">Log in</button>
+      </div>
+
+
+      <div class="toggle-role">
+        <input type="radio" id="login-as-doctor" name="role" value="doctor" formControlName="role">
+        <label for="login-as-doctor">Login as doctor</label>
+        <input type="radio" id="login-as-patient" name="role" value="patient" formControlName="role">
+        <label for="login-as-patient">Login as patient</label>
+        <div *ngIf="formSubmitted && role?.errors" class="error-text">
+          <div *ngIf="formSubmitted && role?.errors?.['required']" class="error-text">
+            Please select a role.
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</main>
