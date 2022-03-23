@@ -6,16 +6,23 @@ import { TopHeaderComponent } from './components/top-header/top-header.component
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LandingScreenComponent } from './components/landing-screen/landing-screen.component';
 
+const COMPONENTS =[
+  TopHeaderComponent,
+  SidebarComponent,
+  LandingScreenComponent
+]
+
 
 @NgModule({
   declarations: [
-    TopHeaderComponent,
-    SidebarComponent,
-    LandingScreenComponent
+    ...COMPONENTS
   ],
   imports: [
     CommonModule,
     SharedRoutingModule
+  ],
+  exports: [
+    ...COMPONENTS
   ]
 })
 export class SharedModule { }

@@ -10,6 +10,8 @@ export class LandingScreenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  
   }
 
 }
