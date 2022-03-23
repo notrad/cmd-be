@@ -31,11 +31,24 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css" 
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js","node_modules/bootstrap/dist/js/bootstrap.min.js"
                ]   },
+=======
+             
+              "node_modules/bootstrap/dist/css/bootstrap.min.css" ,
+              "src/styles.scss"
+
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",      
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          },
+>>>>>>> 93e62c7486888caaaa32d42369e712d75b36154b
           "configurations": {
             "production": {
               "budgets": [

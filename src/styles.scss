@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+<<<<<<< HEAD
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -15,3 +16,8 @@
     padding: 250px 16px;
   }
   @import "~bootstrap/dist/css/bootstrap.css"
+=======
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/dist/css/bootstrap.css"
+>>>>>>> 93e62c7486888caaaa32d42369e712d75b36154b

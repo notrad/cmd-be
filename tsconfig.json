@@ -2,8 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+<<<<<<< HEAD
     "resolveJsonModule": true,
     "esModuleInterop": true,
+=======
+    "resolveJsonModule" : true,
+>>>>>>> 93e62c7486888caaaa32d42369e712d75b36154b
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -23,7 +27,9 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

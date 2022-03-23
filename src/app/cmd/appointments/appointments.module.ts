@@ -40,9 +40,12 @@ const COMPONENT = [
   declarations: [
     ...COMPONENT
   ],
-  imports: [CommonModule, AppointmentsRoutingModule],
-  exports: [
-    ...COMPONENT
+  imports: [
+    CommonModule,
+    AppointmentsRoutingModule
+  ],
+  exports:[
+    ViewAllAppointmentComponent
   ]
 })
 export class AppointmentsModule {}

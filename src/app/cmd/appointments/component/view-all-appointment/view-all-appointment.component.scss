@@ -1,0 +1,73 @@
+.header-text{
+    color: #01325D;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+    padding-top: 9px;
+}
+.profileImage{
+    height: 4rem;
+    width: 5.3rem;
+}
+.profileName{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #01325D;
+}
+.links{
+    position: relative;
+    bottom: 0.8rem;
+}
+.line{
+    margin-top: 0.688rem;
+    margin-bottom: 0.125rem;
+}
+.crd{
+    border-radius: 0.5rem;
+    height: 12rem;
+}
+.icon-image{
+    height: 1.8rem;
+    width: 3.5rem;
+}
+.appointments-container{
+    background-color: #e6e6e6;
+    border: solid 1px darkgrey;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+.piped img {
+    border-left: 0.1rem solid #e6e6e6;
+}
+.piped img:first-child {
+    border-left: none;
+}
+.menu-icons{
+    margin-left: 4rem;
+    position: relative;
+    bottom: 0.5rem;
+}
+.time{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+.appoint-time{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.appoint-date{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;margin-top: 0.4rem;
+}
+.hyperlinks{
+    font-size: 0.9rem;
+    font-family: arial;
+    text-align: center;
+}

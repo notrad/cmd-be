@@ -17,6 +17,8 @@ export class LandingScreenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  
   }
   // pre:PresDetails[]=data;
 }
