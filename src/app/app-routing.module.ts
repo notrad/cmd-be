@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './core/guards/auth.guard';
+import { ViewAllPrescriptionComponent } from './cmd/appointments/component/view-appointment/components/view-all-prescription/view-all-prescription.component';
+import { AppointmentHistoryComponent } from './cmd/patients/components/patient-info/components/appointment-history/appointment-history.component';
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
 
 const routes: Routes = [
@@ -10,9 +12,11 @@ const routes: Routes = [
   },
   {
     path:"",
-    component:LandingScreenComponent,
+    component:ViewAllPrescriptionComponent,
+    canActivate: [AuthGuard],
     pathMatch: "full"
   },
+  
   {
     path:"cmd",
     canActivate: [AuthGuard],

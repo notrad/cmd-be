@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'; 
+import AppointmentList from '../../../../../assets/mockData/appointmentList.json';
 
 @Component({
   selector: 'app-view-all-appointment',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-all-appointment.component.scss']
 })
 export class ViewAllAppointmentComponent implements OnInit {
-
+  patinentsAppointmentList =AppointmentList;
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {  }
 
 }
