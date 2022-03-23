@@ -1,1 +1,31 @@
-<p>view-all-prescription works!</p>
+
+<style> </style>
+  <link rel="stylesheet" href="view-all-prescription.component.scss">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="card">
+  <div class="row">
+    <div class="col-10">
+        <h5><strong>Prescription</strong></h5>
+    </div>
+    <div class="col-1">
+      <!-- clicking on add button will show added prescription -->
+      <button class="btn size mx-1"><i class="fa-solid fa-square-plus fa-2x plus" (click)="getpres()"></i>
+      </button>
+    </div>
+  </div>
+  
+<div class="box" *ngFor="let data of prescriptionData" id="number">
+  <div class="container" >
+    <div class="row">
+      <div class="col-1"><h6>{{data.duration}}</h6></div>
+    <div class="col"><h6>{{data.Medicine}}</h6></div>
+    <div class="col-1" ><button (click)="deletePres(data)" class="btn size mx 1 class1"><img src="../../../../../../../assets/delete.png" alt="" width="20px" >
+    </button></div>
+      <div class="row-1" class="text-muted" id="text">{{data.cycle}}</div>
+      <div class="col-7" class="text-muted" id="text">{{data.description}}</div>
+    </div>
+  </div>
+</div>
+</div>
+
