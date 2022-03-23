@@ -20,6 +20,7 @@ const routes: Routes = [
   {
     path:"cmd",
     canActivate: [AuthGuard],
+    canActivateChild: [AuthGuard],
     loadChildren: () =>
     import("./cmd/cmd.module").then(
       (m) => m.CmdModule

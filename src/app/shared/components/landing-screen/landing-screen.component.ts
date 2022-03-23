@@ -76,7 +76,7 @@ export class LandingScreenComponent implements OnInit {
           this.loginForm.setValue({ email: null, password: null, role: 'doctor' });
 
           // reroute base on user role
-          this._router.navigate(['/cmd/appoitment/viewappointment']);
+          this._router.navigate(['/cmd/appoitment/allAppointments']);
         },
         error: (err) => {
           this.credentialError = true;

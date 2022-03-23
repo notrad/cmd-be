@@ -1,4 +1,4 @@
-.nav {
+nav {
   background-color: var(--primary-color);
   padding: 0.8rem 2rem 0.8rem 1rem;
   text-align: right;
@@ -13,7 +13,7 @@
 
 main {
   /* TO DO: dynamically calculate the height of the main section by subtracting the total height of the nav */
-  height: calc(100% - 44.9167px);
+  height: calc(100% - 49.5833px);
 
   // login page image
   .login-form-image {
