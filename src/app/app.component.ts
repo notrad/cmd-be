@@ -6,12 +6,6 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent{
   title = 'cmd_fe';
-  constructor(private route:Router){}
-
-  ngOnInit(){
-    //this.route.navigate(['allAppointments']);
-     this.route.navigateByUrl('allAppointments');
-  }
 }

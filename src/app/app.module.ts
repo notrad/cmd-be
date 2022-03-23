@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AppointmentsModule} from '../app/cmd/appointments/appointments.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CmdModule } from './cmd/cmd.module';
 import { SharedModule } from './shared/shared.module';
@@ -16,7 +15,6 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppointmentsModule,
     NgbModule,
     SharedModule,
     CmdModule,
