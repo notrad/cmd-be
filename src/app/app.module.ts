@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AppointmentsModule} from '../app/cmd/appointments/appointments.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CmdModule } from './cmd/cmd.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     AppointmentsModule,
-    NgbModule
+    NgbModule,
+    SharedModule,
+    CmdModule
   ],
   providers: [],
   bootstrap: [AppComponent]
