@@ -10,6 +10,7 @@ import { AppointmentHistoryComponent } from './components/patient-info/component
 import { PrescriptionHistoryComponent } from './components/patient-info/components/prescription-history/prescription-history.component';
 import { AddPrescriptionComponent } from './components/patient-info/components/prescription-history/components/add-prescription/add-prescription.component';
 import { ViewPrescriptionDetailsComponent } from './components/patient-info/components/prescription-history/components/view-prescription-details/view-prescription-details.component';
+import { AppointmentTileComponent } from './components/patient-info/components/appointment-history/appointment-tile/appointment-tile.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ViewPrescriptionDetailsComponent } from './components/patient-info/comp
     AppointmentHistoryComponent,
     PrescriptionHistoryComponent,
     AddPrescriptionComponent,
-    ViewPrescriptionDetailsComponent
+    ViewPrescriptionDetailsComponent,
+    AppointmentTileComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,22 @@
+[
+    
+
+       {   "duration":"1",
+           "Medicine":"Crocine",
+           "cycle":"M-A-N",
+           "description":"Dont use hot water during consume"
+       },
+       
+       { 
+        "duration":"3",  
+        "Medicine":"Dolo",
+        "cycle":"M-A-N",
+        "description":"Dont use hot water during consume"
+    },
+    {   
+        "duration":"2",
+        "Medicine":"Citrizen",
+        "cycle":"M-A-N",
+        "description":"Dont use hot water during consume"
+    }
+]

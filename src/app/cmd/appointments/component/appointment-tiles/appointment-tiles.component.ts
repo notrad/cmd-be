@@ -11,5 +11,5 @@ export class AppointmentTilesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
