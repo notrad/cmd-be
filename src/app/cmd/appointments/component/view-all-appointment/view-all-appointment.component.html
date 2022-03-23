@@ -1,1 +1,32 @@
-<p>view-all-appointment works!</p>
+<div class="container appointments-container">
+<h4 class="row mt-3 header-text">All Appointments</h4>
+<div class="row mt-3 card-group" >
+    <div class="col-3" *ngFor="let appointment of patinentsAppointmentList">
+        <div class="card mb-4 crd">
+            <div class="card-body">
+                <div class="row">
+                        <img class="col-3 profileImage" src="../../../../../assets/images/avatar.PNG"/>
+                        <p class="col-7 mt-2 profileName">{{appointment.name}}</p>
+                </div>
+                <div class="row piped menu-icons">
+                    <img class="icon-image col-3" src="../../../../../assets/images/messege.image.png"/> 
+                    <img class="icon-image col-3" src="../../../../../assets/images/call.image.png"/> 
+                    <img class="icon-image col-3" src="../../../../../assets/images/video.image.png"/>
+                </div>
+                <hr class="line">
+                <div class="row">
+                    <p class="col-6 appoint-time" >{{appointment.time}}</p>
+                    <p class="col-6  appoint-date" >{{appointment.date}}</p>
+                </div>
+                <div class="row links">
+                    <a class="col-6 hyperlinks">View Detail</a>
+                    <a class="col-6 hyperlinks">Give feedback</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+

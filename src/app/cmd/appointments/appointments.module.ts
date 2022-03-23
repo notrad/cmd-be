@@ -40,6 +40,9 @@ import { ViewFeedbackComponent } from './component/view-feedback/view-feedback.c
   imports: [
     CommonModule,
     AppointmentsRoutingModule
+  ],
+  exports:[
+    ViewAllAppointmentComponent
   ]
 })
 export class AppointmentsModule { }
