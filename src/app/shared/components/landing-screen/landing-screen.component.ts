@@ -4,6 +4,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { UserCredentials } from '../../models/UserCredentialsInterface';
+import { NgxSpinnerService } from "ngx-spinner";
 
 
 @Component({
@@ -27,7 +28,8 @@ export class LandingScreenComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder, 
     private _authService: AuthService, 
-    private _router: Router) { }
+    private _router: Router,
+    private spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
     this.loginForm = this._formBuilder.group({
@@ -62,10 +64,11 @@ export class LandingScreenComponent implements OnInit {
     }
 
     this.userCredentials = form.value;
+    this.spinner.show();
     this.loginObserver = this._authService.loginUser(this.userCredentials).subscribe(
       {
         next: (res) => {
-          
+          this.spinner.hide();
           this._authService.UserData = res;
 
           //clear form and reset the values after submission
@@ -79,6 +82,7 @@ export class LandingScreenComponent implements OnInit {
           this._router.navigate(['/cmd/appoitment/allAppointments']);
         },
         error: (err) => {
+          this.spinner.hide();
           this.credentialError = true;
           this.credentialErrorMessage = err.error.errorMessage;
         }

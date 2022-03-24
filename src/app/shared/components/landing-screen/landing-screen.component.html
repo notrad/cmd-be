@@ -3,10 +3,12 @@
 </nav>
 <main>
   <div class="login-form-image">
+    
     <img src="https://dummyimage.com/516x534/4e6c84/ffffff.png&text=+CMD" alt="cmd login page image">
   </div>
 
   <div class="login-form-container">
+    <ngx-spinner type="ball-scale-multiple" [fullScreen]="false"></ngx-spinner>
     <h3 class="welcome-text">{{ loginForm.value.role == 'doctor' ? welcomeHeadingDoctor : welcomeHeadingPatient }}</h3>
     <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmission(loginForm)">
       <div class="credentials">
