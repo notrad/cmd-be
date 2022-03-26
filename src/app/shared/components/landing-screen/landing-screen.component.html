@@ -22,6 +22,12 @@
           </div>
         </div>
         <input type="password" name="password" id="password" [placeholder]="passwordPlaceholder" formControlName="password" [ngClass]="{ 'invalid-input': formSubmitted && password?.errors }" required>
+        <div *ngIf="formSubmitted && password?.errors?.['minlength']" class="error-text">
+            Minimum Password Length: 8 Characters
+        </div>
+        <div *ngIf="formSubmitted && password?.errors?.['pattern']" class="error-text">
+          Password must contain at least one uppercase, one lowercase, and one number.
+      </div>
         <button type="submit" [disabled]="loginForm.invalid">Log in</button>
       </div>
 

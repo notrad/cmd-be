@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
+import { AuthService } from 'src/app/core/services/auth.service';
 import AppointmentList from '../../../../../assets/mockData/appointmentList.json';
 
 @Component({
@@ -8,7 +9,7 @@ import AppointmentList from '../../../../../assets/mockData/appointmentList.json
 })
 export class ViewAllAppointmentComponent implements OnInit {
   patinentsAppointmentList =AppointmentList;
-  constructor() { }
+  constructor(public _auth: AuthService) { }
 
   ngOnInit(): void {  }
 

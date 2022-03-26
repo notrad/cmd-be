@@ -36,8 +36,14 @@ export class LandingScreenComponent implements OnInit {
       email: [null, [
         Validators.required,
         Validators.pattern("^[a-zA-Z0-9.\-_]+@[a-zA-Z.-]+[.][a-zA-Z]{2,}$")
-      ]],
-      password: [null, Validators.required],
+      ]
+    ],
+      password: [null, [
+        Validators.required, 
+        Validators.minLength(8),
+        Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')
+      ]
+    ],
       role: ['doctor', Validators.required]
     });
   }

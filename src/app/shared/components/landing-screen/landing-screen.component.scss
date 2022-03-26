@@ -1,10 +1,15 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   background-color: var(--primary-color);
   padding: 0.8rem 2rem 0.8rem 1rem;
   text-align: right;
 
-  div {
-    a {
+  > div {
+    > a {
       color: var(--white);
       text-decoration: none;
     }
@@ -22,8 +27,7 @@ main {
 
   // login form styling
   .login-form-container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
     padding: 1rem;
     height: 100%;
     position: relative;
@@ -37,16 +41,14 @@ main {
 
     form {
       flex: 1;
-      display: flex;
-      flex-direction: column;
+      @include flex-column();
       width: 70%;
       margin: 0 auto;
       justify-content: space-around;
 
       // user email and password input styling
       .credentials {
-        display: flex;
-        flex-direction: column;
+        @include flex-column();
 
         input {
           text-align: center;
@@ -106,8 +108,7 @@ main {
 
   // User Role Toggle Container styling, radio buttons
   .toggle-role {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
 
     input[type=radio] {
       display: none;

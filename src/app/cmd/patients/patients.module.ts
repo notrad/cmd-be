@@ -11,6 +11,7 @@ import { PrescriptionHistoryComponent } from './components/patient-info/componen
 import { AddPrescriptionComponent } from './components/patient-info/components/prescription-history/components/add-prescription/add-prescription.component';
 import { ViewPrescriptionDetailsComponent } from './components/patient-info/components/prescription-history/components/view-prescription-details/view-prescription-details.component';
 import { AppointmentTileComponent } from './components/patient-info/components/appointment-history/appointment-tile/appointment-tile.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { AppointmentTileComponent } from './components/patient-info/components/a
   ],
   imports: [
     CommonModule,
-    PatientsRoutingModule
+    PatientsRoutingModule,
+    FormsModule
   ]
 })
 export class PatientsModule { }
