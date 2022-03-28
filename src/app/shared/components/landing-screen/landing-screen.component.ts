@@ -29,7 +29,7 @@ export class LandingScreenComponent implements OnInit {
     private _formBuilder: FormBuilder, 
     private _authService: AuthService, 
     private _router: Router,
-    private spinner: NgxSpinnerService) { }
+    private _spinner: NgxSpinnerService) { }
 
   ngOnInit(): void {
     this.loginForm = this._formBuilder.group({
@@ -70,11 +70,11 @@ export class LandingScreenComponent implements OnInit {
     }
 
     this.userCredentials = form.value;
-    this.spinner.show();
+    this._spinner.show();
     this.loginObserver = this._authService.loginUser(this.userCredentials).subscribe(
       {
         next: (res) => {
-          this.spinner.hide();
+          this._spinner.hide();
           this._authService.UserData = res;
 
           //clear form and reset the values after submission
@@ -88,7 +88,7 @@ export class LandingScreenComponent implements OnInit {
           this._router.navigate(['/cmd/appoitment/allAppointments']);
         },
         error: (err) => {
-          this.spinner.hide();
+          this._spinner.hide();
           this.credentialError = true;
           this.credentialErrorMessage = err.error.errorMessage;
         }
