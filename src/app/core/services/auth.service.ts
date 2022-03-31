@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Observable } from 'rxjs';
+import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Router } from '@angular/router';
 import jwtDecode from 'jwt-decode';
 import { UserCredentials } from '../../shared/models/UserCredentialsInterface';
@@ -16,7 +16,15 @@ export class AuthService {
   constructor(private _http: HttpClient, private _router: Router) { }
 
   loginUser(userCredentials: UserCredentials): Observable<any> {
-    return this._http.post<Observable<any>>(this._loginUrl, userCredentials);
+    return this._http.post<Observable<any>>(this._loginUrl, userCredentials)
+    .pipe(
+      retry(3),
+      catchError(
+        error => {
+          return throwError(() => error);
+        }
+      )
+    );
   }
 
   isLoggedIn(): boolean {

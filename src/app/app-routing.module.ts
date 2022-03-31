@@ -4,6 +4,7 @@ import { AuthGuard } from './core/guards/auth.guard';
 import { ViewAllPrescriptionComponent } from './cmd/appointments/component/view-appointment/components/view-all-prescription/view-all-prescription.component';
 import { AppointmentHistoryComponent } from './cmd/patients/components/patient-info/components/appointment-history/appointment-history.component';
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
     import("./cmd/cmd.module").then(
       (m) => m.CmdModule
     ),
+  },
+
+  {
+    path:"**",
+    component: NotFoundComponent
   }
 ];
 
