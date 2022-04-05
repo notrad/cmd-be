@@ -49,26 +49,48 @@ describe('Login Form', () => {
     fixture.detectChanges();
   });
 
-  it('empty form should be invalid',() => {
-    expect(component.loginForm.invalid).toBe(true)
-    expect(component.email?.value).toBe(null);
-    expect(component.password?.value).toBe(null);
-  });
-
   it('getter for email FormControl Object', () => {
     expect(component.email).toBeTruthy();
+    expect(component.email?.value).toBeNull();
     
   });
 
   it('getter for role FormControl Object', () => {
     expect(component.role).toBeTruthy();
+    expect(component.role?.value).toBe('doctor');
   });
 
-  it('getter for password', () => {
+  it('getter for password FormControl Object', () => {
     expect(component.password).toBeTruthy();
+    expect(component.password?.value).toBeNull();
+
   });
 
-  it('loginForm submission', () => {
+  it('empty form should be invalid',() => {
+    expect(component.loginForm.invalid).toBe(true);
+  });
+
+  it('entering invalid credentials in loginForm should return FormGroup Invalid to be false', () => {
+    component.loginForm.setValue({
+      email: 'hkljadsf2@fff',
+      password: 'jfhsjfif',
+      role: 'fasd'
+    });
+    expect(component.loginForm.valid).toBe(false);
+    
+  });
+
+  it('entering valid credentials in loginForm should return FormGroup Valid to be true', () => {
+    component.loginForm.setValue({
+      email: 'email@domain.com',
+      password: 'User@passw0rd',
+      role: 'doctor'
+    });
+    expect(component.loginForm.valid).toBe(true);
+    
+  });
+
+  it('loginForm submission function is created', () => {
     expect(component.loginFormSubmission).toBeTruthy();
   });
 });

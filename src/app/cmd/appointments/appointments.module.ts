@@ -17,6 +17,7 @@ import { AddAppointmentComponent } from './component/add-appointment/add-appoint
 import { AppointmentSchudleComponent } from './component/add-appointment/components/appointment-schudle/appointment-schudle.component';
 import { AppointmentConfirmationComponent } from './component/add-appointment/components/appointment-confirmation/appointment-confirmation.component';
 import { ViewFeedbackComponent } from './component/view-feedback/view-feedback.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 const COMPONENT = [
   AppointmentTilesComponent,
@@ -42,7 +43,8 @@ const COMPONENT = [
   ],
   imports: [
     CommonModule,
-    AppointmentsRoutingModule
+    AppointmentsRoutingModule,
+    SharedModule
   ],
   exports:[
     ViewAllAppointmentComponent

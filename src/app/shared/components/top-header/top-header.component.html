@@ -47,7 +47,7 @@
             data-bs-toggle="dropdown" aria-expanded="false"></a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-            <li><a class="dropdown-item d-flex justify-content-center" href="#"><span
+            <li><a class="dropdown-item d-flex justify-content-center"><span
                   class="font-weight-bold">Status:</span>Online</a>
             </li>
 
@@ -57,7 +57,7 @@
 
             </li>
 
-            <li><a class="dropdown-item d-flex justify-content-center" href="#">Account Setting</a></li>
+            <li><a class="dropdown-item d-flex justify-content-center">Account Setting</a></li>
 
             <li>
 
@@ -65,7 +65,7 @@
 
             </li>
 
-            <li><a class="dropdown-item d-flex justify-content-center" href="#">Feedback</a></li>
+            <li><a class="dropdown-item d-flex justify-content-center">Feedback</a></li>
 
             <li>
 
@@ -73,12 +73,12 @@
 
             </li>
 
-            <li><a class="dropdown-item d-flex justify-content-center" href="#">Logout</a></li>
+            <li><a class="dropdown-item d-flex justify-content-center" (click)="onLogoutButtonClick()">Logout</a></li>
 
           </ul>
 
         </div>
-        <img src="../../../assets/bouii.jpg" class="card-img-top rounded-circle" />
+        <img [src]="profileImageUrl" class="card-img-top rounded-circle" />
 
       </form>
 

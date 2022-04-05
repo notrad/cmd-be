@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-top-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopHeaderComponent implements OnInit {
 
-  constructor() { }
+  profileImageUrl: string = '';
+  constructor(private _authService: AuthService) { }
 
   ngOnInit(): void {
+    this.profileImageUrl = localStorage['user_profile_image_url'];
   }
 
+  onLogoutButtonClick() {
+    this._authService.logoutUser();
+  }
 }
