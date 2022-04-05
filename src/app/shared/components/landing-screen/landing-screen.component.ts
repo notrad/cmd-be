@@ -3,7 +3,7 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 import { AuthService } from 'src/app/core/services/auth.service';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { UserCredentials } from '../../models/UserCredentialsInterface';
+import { UserCredentialInterface } from '../../models/userCredential.model';
 import { NgxSpinnerService } from "ngx-spinner";
 
 
@@ -20,7 +20,7 @@ export class LandingScreenComponent implements OnInit {
   passwordPlaceholder: string = 'Password';
   loginForm!: FormGroup;
   formSubmitted: boolean = false;
-  userCredentials!: UserCredentials;
+  userCredentials!: UserCredentialInterface;
   loginObserver: Subscription = new Subscription;
   credentialError: boolean = false;
   credentialErrorMessage: string = '';
@@ -85,7 +85,7 @@ export class LandingScreenComponent implements OnInit {
           this.loginForm.setValue({ email: null, password: null, role: 'doctor' });
 
           // reroute base on user role
-          this._router.navigate(['/cmd/appoitment/allAppointments']);
+          this._router.navigate(['']);
         },
         error: (err) => {
           this._spinner.hide();

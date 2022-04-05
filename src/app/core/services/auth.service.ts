@@ -4,18 +4,18 @@ import { environment } from 'src/environments/environment';
 import { catchError, Observable, retry, throwError } from 'rxjs';
 import { Router } from '@angular/router';
 import jwtDecode from 'jwt-decode';
-import { UserCredentials } from '../../shared/models/UserCredentialsInterface';
-import { User } from '../../shared/models/UserInterface';
+import { UserCredentialInterface } from '../../shared/models/userCredential.model';
+import { UserInterface } from '../../shared/models/user.model';
 
 
 @Injectable()
 export class AuthService {
-  private newUser!: User;
+  private newUser!: UserInterface;
 
   private _loginUrl = environment.loginUrl;
   constructor(private _http: HttpClient, private _router: Router) { }
 
-  loginUser(userCredentials: UserCredentials): Observable<any> {
+  loginUser(userCredentials: UserCredentialInterface): Observable<any> {
     return this._http.post<Observable<any>>(this._loginUrl, userCredentials)
     .pipe(
       retry(3),

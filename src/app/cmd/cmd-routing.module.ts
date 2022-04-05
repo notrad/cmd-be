@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppointmentHistoryComponent } from './patients/components/patient-info/components/appointment-history/appointment-history.component';
 
-const routes: Routes = [{
-  path:"appoitment",
+const routes: Routes = [
+  {
+  path: "appointment",
   loadChildren: () =>
-  import("./appointments/appointments.module").then(
-    (m) => m.AppointmentsModule
-  ),
-}];
+    import("./appointments/appointments.module").then(
+      (m) => m.AppointmentsModule
+    ),
+  },
+  {
+    path: "dashboard",
+    loadChildren: () => import("./dashboard/dashboard.module").then(
+      (m) => m.DashboardModule
+    ),
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

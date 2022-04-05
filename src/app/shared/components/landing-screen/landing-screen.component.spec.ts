@@ -6,7 +6,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
 
 import { LandingScreenComponent } from './landing-screen.component';
 
-describe('LandingScreenComponent', () => {
+describe('Landing-Screen Component', () => {
   let component: LandingScreenComponent;
   let fixture: ComponentFixture<LandingScreenComponent>;
 
@@ -28,12 +28,39 @@ describe('LandingScreenComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+});
 
-  it('getter for email', () => {
-    expect(component.email).toBeTruthy();
+describe('Login Form', () => {
+  let component: LandingScreenComponent;
+  let fixture: ComponentFixture<LandingScreenComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ LandingScreenComponent ],
+      providers: [ FormBuilder, AuthService ],
+      imports: [ HttpClientModule, RouterTestingModule ]
+    })
+    .compileComponents();
   });
 
-  it('getter for role', () => {
+  beforeEach(() => {
+    fixture = TestBed.createComponent(LandingScreenComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('empty form should be invalid',() => {
+    expect(component.loginForm.invalid).toBe(true)
+    expect(component.email?.value).toBe(null);
+    expect(component.password?.value).toBe(null);
+  });
+
+  it('getter for email FormControl Object', () => {
+    expect(component.email).toBeTruthy();
+    
+  });
+
+  it('getter for role FormControl Object', () => {
     expect(component.role).toBeTruthy();
   });
 
