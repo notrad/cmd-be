@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,7 +24,8 @@ import { TokenInterceptor } from './core/interceptors/token.interceptor';
     SharedModule,
     CmdModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    Title
   ],
   providers: [
     AuthService,
