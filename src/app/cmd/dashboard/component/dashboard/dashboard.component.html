@@ -73,8 +73,8 @@
                            <p><i class="bi bi-chat-right-text"></i></p> 
                           </div>
                           <div class="row piped menu-icons2" *ngIf="appointment.isconfirmed == false">
-                            <img class="icon-image col-3" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"> 
-                            <img class="icon-image col-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU">
+                            <img class="icon-image col-3" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"(click)="conformBtn()"> 
+                            <img class="icon-image col-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU" (click)="cancelledBtn()">
                                  </div>
                         <hr id="hn">
                         <div class="row">
