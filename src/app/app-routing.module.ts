@@ -24,6 +24,12 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     pathMatch: "full"
   },
+  {
+    path: "dashboard",
+    component: DashboardComponent,
+    canActivate: [AuthGuard],
+    pathMatch: "full"
+  },
   
   {
     path:"cmd",
