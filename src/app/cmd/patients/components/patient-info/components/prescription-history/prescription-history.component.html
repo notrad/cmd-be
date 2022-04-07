@@ -1,1 +1,46 @@
-<p>prescription-history works!</p>
+<link rel="stylesheet" href="prescription-history.component.scss">
+
+<div class="card container  rtdd" >
+    <div class="card-body">
+        <p class="title">Prescription History</p>
+         <!-- <hr> not include  -->
+         <div class="thick-line" ></div>
+        <div class="card yyyy" *ngFor="let data of pre;let i= index">
+            <div class="card-body">   
+                 <div>
+                    <div class="row">
+                        <div class="col-5"> 
+                            <h6 class="sym">{{data.sym}}</h6>
+                        </div>
+                        <div class="col-1">
+                            <div class="vertical"></div>
+                        </div>
+                        <div class="col-1 tttt">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="col-4 tttt">
+                            <p>{{data.date}}</p>
+                        </div>
+                        <div class="col-1" >
+                            <div class="expandCollapse">
+                                <i class="fa fa-circle-chevron-down" (click)="toggle(i)" ></i>
+                            </div>
+                        </div> 
+                     </div>
+                     <div class="expandCollapseContent" *ngIf="hideRuleContent[i]">
+                        <p class="info-info">Date & Time</p>
+                        <p class="info">{{data.date}} {{data.time}}</p>
+                        <div class="thin-line"></div>
+                        <p class="info-info">Medicines</p>
+                        <p class="info">
+                            {{data.medi}}
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>  
+    </div>    
+</div>    

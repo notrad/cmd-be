@@ -6,6 +6,12 @@ import { AppointmentHistoryComponent } from './cmd/patients/components/patient-i
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { DashboardComponent } from './cmd/dashboard/component/dashboard/dashboard.component';
+import { ViewSymptonsHistoryComponent } from './cmd/patients/components/patient-info/components/view-symptons-history/view-symptons-history.component';
+import { PatientInfoComponent } from './cmd/patients/components/patient-info/patient-info.component';
+import { ViewPrescriptionDetailsComponent } from './cmd/patients/components/patient-info/components/prescription-history/components/view-prescription-details/view-prescription-details.component';
+import { prescriptionHistory } from './cmd/patients/components/patient-info/components/prescription-history/prescriptionHistory.model';
+import { PrescriptionHistoryComponent } from './cmd/patients/components/patient-info/components/prescription-history/prescription-history.component';
+import { ViewEditCommentsComponent } from './cmd/appointments/component/view-appointment/components/view-edit-comments/view-edit-comments.component';
 
 const routes: Routes = [
   {
@@ -18,7 +24,10 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     pathMatch: "full"
   },
-  
+  {
+  path:"testing",
+  component:PatientInfoComponent,
+  },
   {
     path:"cmd",
     canActivate: [AuthGuard],

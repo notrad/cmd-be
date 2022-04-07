@@ -1,0 +1,49 @@
+.btn-primary{
+    margin-left: 82%; 
+    padding-top: 1%; 
+    padding-bottom: 1%; 
+    text-align: center; 
+    background-color: rgb(7, 7, 109);
+    color: cornsilk;
+  }
+  .btn-primary1{
+    background-color: rgb(7, 7, 109);
+    align-items: left;
+    color: cornsilk;
+    margin-right: 10px;
+  }
+  .input-data{
+    height: 40px;
+    width: 100px; 
+    position: relative;
+
+  }
+  #block{
+    border: none; 
+    outline: none;
+    font-size: 17px; 
+    border-bottom:2px solid rgb(32, 14, 100) ;
+    max-height:"100%";
+    width: 29rem; 
+
+  }
+  .wrapper{
+    margin-top: 10%;
+  }
+  #comment{
+    position: absolute; 
+    bottom: 20px; 
+    left: 0; 
+    color: gray; 
+    pointer-events: none;
+
+  }
+  .modal-footer{
+    
+    width: 31rem;
+
+  }
+  #footer{
+    display: flex;
+    margin-right: 65%;
+  }

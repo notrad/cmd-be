@@ -1,1 +1,106 @@
-<app-appointment-history></app-appointment-history>
+
+<!-- Patient Information -->
+<div class="card patient_info shadow-sm p-1 mb-1 bg-white rounded">
+    
+    <!-- iterating through list -->
+    <div class="row" *ngFor="let i of infolist">
+        <div>
+            <img src="../assets/arrow.png" class="arrows"/>
+            <!-- <i class="fa fa-arrow-left arrows" aria-hidden="true"></i> -->
+        </div>
+
+        <!-- Patient Profile Image -->
+        <div class="col-lg-1 image">
+            <img src="../assets/test.jpg" class="card-img-top rounded-circle" alt="..." />
+        </div>
+
+        <div class="col-lg-2">
+            <span class="h3">{{i.Name}}</span> <br>
+            <span class="text-muted">Tel: {{i.Contact}}</span>
+           
+            <!-- Icon -->
+            <div class="row">
+                <div class="col-lg-2"><i class="fa fa-commenting fa-lg" aria-hidden="true"></i></div>
+                <div class="col-lg-1 vlspace">
+                        <div class="vr vl2"></div>
+                </div>
+                <div class="col-lg-2 vlspace"><i class="fa fa-phone fa-lg" aria-hidden="true"></i></div>
+                <div class="col-lg-1 vlspace">
+                        <div class="vr vl2"></div>
+                </div>
+                <div class="col-lg-2"><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></div>
+            </div>
+        </div>
+
+        <!-- adding Booking Feature -->
+        <div class="col-lg-2 card booking shadow-sm mb-5 bg-white">
+            <span> <img src="../assets/circleplus.png" class="bookicon"></span>
+            <span class="bookingtext">Book New</span>
+        </div>
+        <div class="col-lg-2 vlspace">
+            <p><span class="text-muted">Info</span></p>
+            <span>{{i.Age}}&nbsp;&nbsp;</span>
+
+            <!-- If gender is male it show male symbol otherwise female symbol -->
+            <span *ngIf="i.Gender == 'M' else elseBlock">
+                <i class="fa fa-mars gender" aria-hidden="true"></i>
+            </span>
+            <ng-template #elseBlock>
+                <span> <i class="fa fa-venus gender" aria-hidden="true"></i> </span>
+            </ng-template>
+            {{i.DOB | date}}
+            <br>
+            <span>{{i.Height}} cm </span>
+            <span><i class="fa fa-tint bcolor" aria-hidden="true">&nbsp;&nbsp;</i></span>
+            <span><sup>{{i.BloodGroup}}</sup></span>
+        </div>
+
+        <!-- Vertical Line -->
+        <div class="col-lg-1 vlspace">
+            <div class="d-flex vl">
+                <div class="vr"></div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+            <p> <span class="text-muted">Allergies</span></p>
+            <span>{{i.Allergies}} </span>
+        </div>
+        <div class="col-lg-1 vlspace">
+            <div class="d-flex vl">
+                <div class="vr"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 vlspace">
+            <p> <span class="text-muted">Active Issues</span></p>
+            <span>{{i.ActiveIssues}}</span>
+        </div>
+        <div class="col-lg-1 vlspace">
+            <div class="d-flex vl">
+                <div class="vr"></div>
+            </div>
+        </div> 
+        <div class="col-lg-2">
+            <p><span class="text-muted">Medical Problem</span></p>
+            <span>{{i.MedicalProblem}}</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="row">
+    <div class="col"><app-view-symptons-history></app-view-symptons-history></div>
+    <div class="col"><app-appointment-history></app-appointment-history></div>
+    <div class="col"><app-prescription-history></app-prescription-history></div>            
+</div>
+
+        
+
+
+
+
+

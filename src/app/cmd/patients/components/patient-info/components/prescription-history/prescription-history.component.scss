@@ -1,0 +1,93 @@
+.rtdd{
+
+    height: 500px; ;
+    width: 30%;
+    margin-top: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.yyyy{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tttt{
+    color: darkcyan;
+}
+.thick-line{
+    width: 100%;
+    height: 0.125rem;
+    background-color: darkgray;
+    margin-bottom: 10px;
+}
+
+
+// .card-body{
+//     padding: auto;
+//     // border-style: solid;
+// }
+
+.vertical{
+    width: 26%;
+    height: 22px ;
+    background-color: darkgray;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+
+.thin-line{
+    width: 98%;
+    height: 0.6px;
+    background-color: gainsboro;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-weight: 400;
+    color: dodgerblue;
+    letter-spacing: 1.1px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.info{
+    font-size: 0.8rem;
+    color: rgb(150,150,150);
+    margin-top: -15px;
+    margin-left: 15px;
+}
+
+.info-info{
+    font-weight: 400;
+    color:dimgrey;
+    margin-left: 15px;
+    
+}
+.sym{
+    font-size: 20px;
+    color: dimgray;
+    letter-spacing: 1.1px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+
+

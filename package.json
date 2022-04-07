@@ -11,16 +11,17 @@
     "test-auth-service": "ng test -- --include src/app/core/services --code-coverage --watch",
     "test-auth-guard": "ng test -- --include src/app/core/guards --code-coverage --watch",
     "test-token-interceptor": "ng test -- --include src/app/core/interceptors --code-coverage --watch"
-
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.1.0",
+    "@angular/cdk": "^13.3.2",
     "@angular/common": "~13.1.0",
     "@angular/compiler": "~13.1.0",
     "@angular/core": "~13.1.0",
     "@angular/forms": "~13.1.0",
     "@angular/localize": "~13.1.0",
+    "@angular/material": "^13.3.2",
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",

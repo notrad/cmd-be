@@ -12,6 +12,7 @@ import { AuthService } from './core/services/auth.service';
 import { AuthGuard } from './core/guards/auth.guard';
 import { TokenInterceptor } from './core/interceptors/token.interceptor';
 import { DashboardDoctorAppointmentsService } from './core/services/dashboard-doctor-appointments.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DashboardDoctorAppointmentsService } from './core/services/dashboard-do
     CmdModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     AuthService,

@@ -1,0 +1,194 @@
+// hr{
+//     width: 100%;
+// }
+// .container{
+//     width:  380px;
+//     height: 400px;
+//     border: 1px solid black;
+//     position: relative;
+//     overflow-x: hidden;
+//     overflow-y: scroll;
+//     padding: 0;
+// }
+// .heading {
+//     margin: 0;
+//     padding-top: 10px;
+//     margin-left: 15px;
+// }
+// h1{
+//     color:blue;
+// }
+// table{
+//     border-collapse: separate;
+//     width: 100%;
+//     border-spacing: 0 12px;
+
+// }
+// tr{
+//     border-bottom: 1px  black;
+//     width: 100%;
+    
+// }
+// td{
+//     padding-left: 15px;
+// }
+// .buttons{
+//     position: absolute;
+//     top: 10px;
+//     left: 260px;
+//     border: 1px solid black;
+//     color: blue;
+//     size: 20px;
+// }
+// .show{
+//     float: right;
+//     padding-left: 15px;
+//     border: 0px;
+//     background-color: white;
+//  }
+
+//  :-webkit-scrollbar {
+//     width: 5px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     /* box-shadow: inset 0 0 5px grey;  */
+//     border-radius: 10px;
+//   }
+   
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: grey; 
+//     border-radius: 10px;
+//   }
+
+// .expandCollapse{
+//     margin-top:-16px ;
+    
+// }
+// .expandCollapseContent{
+//     padding-top: 15px;
+// }
+
+// .edit{
+//     color: blue;
+//     padding-left: 25px;
+   
+// }
+// mat-icon{
+//     cursor: pointer;
+// }
+// .close{
+//     color: red;
+//     padding-left: 15px;
+// }
+
+
+.box-container{
+    width:  338px;
+    height: 300px;
+    border: 1px solid gray;
+    position: relative;
+    margin-left: 100px;
+    border-radius: 5px;
+    padding-left: -50px;
+}
+.heading {
+    margin: 0;
+    padding-top: 10px;
+    border-bottom: 1px solid black; 
+}
+h1{
+    color:rgb(84, 171, 230);
+    padding-left: 5px;
+}
+table{
+    border-collapse: separate;
+    width: 100%;
+    padding-right:-10px ;
+}
+tr{
+    padding:10px;
+    width: 100%;
+}
+td{
+    padding: 6px 6px;
+}
+.buttons{
+    position: absolute;
+    top: 10px;
+    left: 260px;
+    border: 1px solid gray;
+    color: rgb(84, 171, 230);
+    size: 20px;
+    border-radius: 7px;
+    padding: 0px 15px;
+    background-color: white;
+}
+.show{
+    float: right;
+    padding-left: 15px;
+    margin-top: -5px;
+    border: 0px;
+    background-color: white;
+    font-size: 12px;
+    color: rgb(61, 56, 56);
+ }
+
+ /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+
+  .expandCollapse{
+    margin-top:-16px ;
+    
+}
+.expandCollapseContent{
+    padding-top: 25px;
+    padding-left: 5px;
+}
+
+.edit{
+    color: rgb(84, 171, 230);
+    width: 20px;
+    height: 20px;
+}
+.close{
+    color: rgb(207, 80, 80);
+    width: 20px;
+    height: 20px; 
+}
+.Dr{
+    color: gray;
+    font-size: 12px;
+}
+.Symptom{
+    font-size: 17px;
+}
+.value{
+    font-size: 12px;
+}
+.box{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 334px;
+    height: 235px;
+}
+
+
+
+
+
