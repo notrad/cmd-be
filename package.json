@@ -11,7 +11,6 @@
     "test-auth-service": "ng test -- --include src/app/core/services --code-coverage --watch",
     "test-auth-guard": "ng test -- --include src/app/core/guards --code-coverage --watch",
     "test-token-interceptor": "ng test -- --include src/app/core/interceptors --code-coverage --watch"
-
   },
   "private": true,
   "dependencies": {

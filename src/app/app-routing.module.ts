@@ -5,11 +5,17 @@ import { ViewAllPrescriptionComponent } from './cmd/appointments/component/view-
 import { AppointmentHistoryComponent } from './cmd/patients/components/patient-info/components/appointment-history/appointment-history.component';
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+import { ViewEditAccountSettingComponent } from './cmd/settings/components/view-edit-account-setting/view-edit-account-setting.component';
 
 const routes: Routes = [
   {
     path:"login",
     component:LandingScreenComponent
+  },
+  {
+    path:"account-settings",
+    canActivate: [AuthGuard],
+    component:ViewEditAccountSettingComponent
   },
   {
     path:"",

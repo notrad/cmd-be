@@ -1,1 +1,29 @@
-<p>view-edit-account-setting works!</p>
+
+<div class="row">
+    <div class="col1">
+      <div class="leftside">
+        <h2>Account Settings</h2>
+      <h6>Availability Settings</h6>
+      </div>
+      </div>
+      <div class="col2">
+      <div class="rightside">
+        <div class="info"> <span></span> <button type='button' id="save" value='Save' class='btn btn-primary'
+          (click)="editing == 1 ? save(0) : edit(1)">{{editing == 1 ? "save" : "edit"}}</button> </div>
+        <div class="forms">
+          <label class="hoverable" for="fileInput">
+            <img [src]="url ? url : 'https://www.w3schools.com/howto/img_avatar.png'" />
+            <div class="background"></div>
+          </label>
+          <br />
+          <input id="fileInput" type="file" accept="image/*" (change)="onSelectFile($event)" [value]="files"/>
+          <button (click)="delete()">Delete</button>
+            <div class="inputs"><span>Name: <input type="text" value="Dr." [readonly]="isreadonly"></span></div>
+            <div class="inputs"><span>Email:<input type="text" value=""[readonly]="isreadonly"> Phone no.<input type="text" value="+91-" [readonly]="isreadonly"></span></div>
+            <div class="inputs"><span>Speciality:<input type="text"  value="Cardiologist" [readonly]="isreadonly"></span></div>
+            <div class="inputs"><span>NPI no.: <input type="text" value="" [readonly]="isreadonly"></span></div>
+            <div class="inputs"><span>Practice location :<input type="text"  value="" [readonly]="isreadonly"></span></div>
+        </div>
+      </div>
+      </div>
+    </div>

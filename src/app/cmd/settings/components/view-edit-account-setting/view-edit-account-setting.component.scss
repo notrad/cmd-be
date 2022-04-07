@@ -1,0 +1,247 @@
+.leftside, .rightside{
+    height:90vh;
+    width:100%;
+    margin-top: 10px;
+    border-radius: 2%;
+    box-shadow: 0px 0px 5px rgb(243, 241, 241);
+  }
+  
+  .col1{
+    width:35%;
+  }
+  .col2{
+    width:55%;
+  }
+  
+  .rightside{
+    margin-left:12%;
+    background-color: whitesmoke;
+
+  }
+  .rightside.info {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .rightside .info button {
+    margin-top: 4%;
+    margin-right: 20%;
+    background-color: Transparent;
+    height: 40px;
+    width: 80px;
+    border: none;
+    float: right;
+    border-radius: 7px;
+    background-color: rgb(41, 23, 92);
+    cursor: pointer;
+    text-transform: uppercase
+  }
+  
+  .rightside .forms {
+    padding: 70px;
+    height: 700px;
+  }
+  
+  .rightside .inputs {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .rightside .inputs span {
+    font-size: 17px;
+    font-weight:400
+  
+  }
+  
+  .rightside .inputs {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .rightside .inputs input {
+    width: auto;
+    font-size: 1rem;
+    font-weight:450;
+    line-height:1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #161212;
+    outline:none;
+    box-shadow:none;
+    width: auto;
+  }
+  
+  .rightside .inputs input[type="text"][readonly] {
+    border: 2px solid rgba(0, 0, 0, 0)
+  }
+  
+  p {
+    font-family: Lato;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .hoverable{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .hoverable .hover-text{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%,-50%);   
+    z-index: 2;
+  }
+  .hoverable .background{
+    position: absolute;
+    display: none;
+    top: 0;
+    left:  0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .hoverable:hover .hover-text{
+    display: block;
+  }
+  .hoverable:hover .background{
+    display: block;
+  }
+  
+  #fileInput{
+    display: none;
+  }
+  
+  
+  
+  .leftside{
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  
+  h2{
+    text-align: center;
+    color: rgb(28, 28, 82)
+  }
+  h6{
+    text-align: center;
+    color: rgb(158, 150, 150);
+  }
+  
+  .rightside .forms {
+    padding: 70px;
+    height: 700px;
+  }
+  
+  .rightside .inputs {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .rightside .inputs span {
+    font-size: 17px;
+    font-weight:400
+  
+  }
+  
+  .rightside .inputs {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .rightside .inputs input {
+    font-size: 1rem;
+    font-weight:450;
+    line-height:1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline:none;
+    box-shadow:none;
+    width: auto;
+  }
+  
+  .rightside .inputs input[type="text"][readonly] {
+    border: 2px solid rgba(0, 0, 0, 0)
+  }
+  
+  p {
+    font-family: Lato;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .hoverable{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .hoverable .hover-text{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left:  50%;
+    transform: translate(-50%,-50%);   
+    z-index: 2;
+  }
+  .hoverable .background{
+    position: absolute;
+    display: none;
+    top: 0;
+    left:  0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .hoverable:hover .hover-text{
+    display: block;
+  }
+  .hoverable:hover .background{
+    display: block;
+  }
+  
+  #fileInput{
+    display: none;
+  }
+  
+  
+  
+  .leftside{
+    margin-left: 20%;
+    background-color: whitesmoke;
+    
+  }
+  
+  h2{
+    text-align: center;
+    color: rgb(27, 27, 103)
+  }
+  h6{
+    text-align: center;
+    color: gray;
+  }
