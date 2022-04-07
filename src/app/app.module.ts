@@ -25,7 +25,7 @@ import { DashboardDoctorAppointmentsService } from './core/services/dashboard-do
     SharedModule,
     CmdModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     AuthService,

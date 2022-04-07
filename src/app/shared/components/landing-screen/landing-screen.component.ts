@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { UserCredentialInterface } from '../../models/userCredential.model';
 import { NgxSpinnerService } from "ngx-spinner";
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class LandingScreenComponent implements OnInit {
 
+  readonly loginPageTitle: string = "Login to CMD";
   readonly welcomeHeadingDoctor: string = 'Welcome to CMD';
   readonly welcomeHeadingPatient: string = 'Welcome to KKD';
   emailPlaceholder: string = 'Username';
@@ -29,9 +31,11 @@ export class LandingScreenComponent implements OnInit {
     private _formBuilder: FormBuilder, 
     private _authService: AuthService, 
     private _router: Router,
-    private _spinner: NgxSpinnerService) { }
+    private _spinner: NgxSpinnerService,
+    private _titleService: Title) { }
 
   ngOnInit(): void {
+    this._titleService.setTitle(this.loginPageTitle);
     this.loginForm = this._formBuilder.group({
       email: [null, [
         Validators.required,
