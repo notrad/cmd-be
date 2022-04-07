@@ -1,19 +1,86 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-      }
-    ],
-    "comments": [
-      {
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-      }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+    "appointmentList": [
+      
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "12/06/2019",
+            "issue":"Heart Related issue ",
+            "isconfirmed":true,
+            "status":"All",
+            "status-1":"Confirmed"
+          
+        
+        },
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "12/06/2019",
+            "isconfirmed":true,
+            "issue":"Leg injury ",
+            "status":"All",
+            "status-1":"Confirmed"
+        },
+        {
+            "name":"Emma Watson(31)",
+            "time":"10:30",
+            "date": "16/06/2019",
+            "isconfirmed":false,
+            "issue":"Hand injury",
+            "status":"All",
+            "status-1":"Cancelled"
+           
+        },
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "16/06/2019",
+            "isconfirmed":true,
+            "issue":"Hand injury",
+            "status":"All",
+            "status-1":"Confirmed"
+            
+        },
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "12/06/2019",
+            "isconfirmed":true,
+            "issue":"Heart Related issue ",
+            "status":"All",
+            "status-1":"Confirmed"
+        
+        },
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "12/06/2019",
+            "isconfirmed":true,
+            "issue":"Leg injury ",
+            "status":"All",
+            "status-1":"Confirmed"
+            
+        },
+        {
+            "name":"Emma Watson(31)",
+            "time":"10:30",
+            "date": "16/06/2019",
+            "isconfirmed":false,
+            "issue":"Hand injury",
+            "status":"All",
+            "status-1":"Confirmed"
+           
+        },
+        {
+            "name":" Emma Watson(31)",
+            "time":"10:30",
+            "date": "16/06/2019",
+            "isconfirmed":true,
+            "issue":"Hand injury",
+            "status":"All",
+            "status-1":"Confirmed"
+            
+        }
+    ]
+    
   }

@@ -181,3 +181,22 @@ nav-link linktext{
     
 }
 
+.dropdown-menu[data-bs-popper] {
+    left: -162px;
+}
+
+ul > li {
+    cursor: pointer;
+}
+
+.fa-bell {
+    padding-top: 0;
+}
+
+nav {
+    margin-bottom: 0!important;
+}
+
+.linktext {
+    margin: 0.5rem;
+}

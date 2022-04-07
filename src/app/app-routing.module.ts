@@ -6,6 +6,7 @@ import { AppointmentHistoryComponent } from './cmd/patients/components/patient-i
 import { LandingScreenComponent } from './shared/components/landing-screen/landing-screen.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { ViewEditAccountSettingComponent } from './cmd/settings/components/view-edit-account-setting/view-edit-account-setting.component';
+import { DashboardComponent } from './cmd/dashboard/component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
   },
   {
     path:"",
-    component:ViewAllPrescriptionComponent,
+    component:DashboardComponent,
     canActivate: [AuthGuard],
     pathMatch: "full"
   },

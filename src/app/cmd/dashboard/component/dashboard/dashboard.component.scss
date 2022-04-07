@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #fff;
+    float: right;
+    width: 1085px;
+    border: 1px solid transparent;
+    box-shadow: 4px 4px 4px lightgray;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  
+  
+  .right {
+   background-color: #F3F0F0;
+   margin-top: 4%;
+   margin-left: 15%;
+   margin-right: 1%;
+   height: 100vh;
+   border-radius:10px ;
+
+
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .grid-container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+  
+  .grid-container > div {
+    background-color: white;
+    border-radius:10px ;
+    box-shadow: 2px 2px 2px 2px gray ;
+    text-align: center;
+     padding: 10px 10px;
+    font-size: 10px;
+  }
+  .grid-container .today{
+      padding-left:10px ;
+  }
+  .acc{
+      color: darkcyan;
+      text-align: left;
+      font-size: 16px;
+     
+  }
+  .num{
+      font-weight: 500;
+      font-size: 30px;
+      text-align: left;
+  }
+  .to{
+      
+      font-family:'Franklin Gothic Medium', 'Arial Narrow';
+      color: 	gray;
+  }
+  #hr{
+      height: 1px;
+      border: none;
+      margin: 0 10px;
+      background: #574b4b;
+  }
+  // row-2//
+  
+  .app h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+    color: #01325D;
+    padding: 10px;
+  }
+
+  /* Dropdown Button */
+  .app{
+      display: flex;
+      justify-content: space-between;
+  }
+  .app .name{
+      display: inline;
+      display: flex;
+  }
+ 
+ .card{
+    border-radius: 0.5rem;
+    height: 12rem;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    gap: 5px;
+ }
+.profileImage{
+    height: 2.8rem;
+    width: 4.2rem;
+    border-radius: 50%;
+}
+
+.profileName{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin-right: 10px;
+    color: #01325D;
+}
+.hn{
+    margin-top: 0.68rem;
+    margin-bottom: 0.125rem;
+   
+}
+.icon-image{
+    height: 2.2rem;
+    width: 4.1rem;
+}
+
+.piped img {
+    border-left: 0.2rem solid #e6e6e6;
+}
+.piped img:first-child {
+    border-left: none;
+}
+.menu-icons1{
+    margin-left: 0.8rem;
+    position: relative;
+    bottom: 0.8rem;
+    cursor: pointer;
+}
+.menu-icons2{
+    margin-left: 2rem;
+    position: relative;
+    bottom: 0.8rem;
+    cursor: pointer;
+}
+.time{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+.appoint-time{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: gray;
+    font-weight: bolder;
+    
+}
+.appoint-date{
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: -1.0rem;
+}
+.appoint-status{
+    border-left: 2px solid gray;
+    margin-top: 20px;
+    padding: 8px;
+    height: 50px;
+    font-size: 0.8rem;
+    color: gray;
+    font-style: italic;
+
+}
+.hyperlinks{
+    margin-top: 16px;
+    font-size: 0.8rem;
+    font-family: arial;
+    text-align: center;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.name{
+    padding-right: 400px;
+}
+.filter{
+    padding-right: 25px;
+    margin-top: 20px;
+}
+ .demo-zone {
+    display:block;
+    margin-left: 300px;
+    margin-top: 22px;
+    width: 160px ;
+    
+}
+.row{
+    position: relative;
+    bottom: 0.8rem;
+}
+
+.plus{
+   width: 20px;
+   height: 20px;
+}
+.btnn{
+    border: 2px solid black;
+    background-color: #01325D;
+    color: white;
+    width: 160px;
+    height: 25px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    margin-right: 220px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+.btnn a{
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  /*End Dropdown Button */
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, row {
+      width: 100%;
+      height: auto;
+    }
+  }
