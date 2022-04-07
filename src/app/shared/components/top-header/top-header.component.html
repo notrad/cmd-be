@@ -18,7 +18,7 @@
         </li>
         <a href="#" class="navitem1"><i class="fa fa-map-marker" id="mama"></i> St.Marry clinic <img
             src="https://img.icons8.com/ios-glyphs/30/000000/expand-arrow--v1.png" id="arrow"></a>
-        <a href="#" class="navitem2"><i class="fa fa-stethoscope" id="kk"></i> John Deo <img
+        <a href="#" class="navitem2"><i class="fa fa-stethoscope" id="kk"></i> John Doe <img
             src="https://img.icons8.com/ios-glyphs/30/000000/expand-arrow--v1.png" id="arrow"></a>
 
         <li class="nav-item">
@@ -36,7 +36,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link pname">Joe Doe</a>
+            <a class="nav-link pname">{{ loggedInUserName }}</a>
 
           </li>
 
@@ -78,7 +78,7 @@
           </ul>
 
         </div>
-        <img [src]="profileImageUrl" class="card-img-top rounded-circle" />
+        <img [src]="loggedInUserProfileImageUrl" class="card-img-top rounded-circle" />
 
       </form>
 
