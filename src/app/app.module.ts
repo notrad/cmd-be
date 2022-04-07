@@ -11,6 +11,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthService } from './core/services/auth.service';
 import { AuthGuard } from './core/guards/auth.guard';
 import { TokenInterceptor } from './core/interceptors/token.interceptor';
+import { DashboardDoctorAppointmentsService } from './core/services/dashboard-doctor-appointments.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TokenInterceptor } from './core/interceptors/token.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,
       multi: true
-    }
+    },
+    DashboardDoctorAppointmentsService
   ],
   bootstrap: [AppComponent]
 })

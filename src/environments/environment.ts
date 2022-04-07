@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  loginUrl: 'https://cmd-fe.herokuapp.com/api/login'
+  loginUrl: 'https://cmd-fe.herokuapp.com/api/login',
+  doctorAppointmentList: 'http://localhost:3000/appointmentList'
 };
 
 /*
