@@ -73,8 +73,8 @@
                            <p><i class="bi bi-chat-right-text"></i></p> 
                           </div>
                           <div class="row piped menu-icons2" *ngIf="appointment.isconfirmed == false">
-                            <img class="icon-image col-3" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"(click)="conformBtn()"> 
-                            <img class="icon-image col-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU" (click)="cancelledBtn()">
+                            <img class="icon-image col-3" data-bs-target="#myModal" data-bs-toggle="modal" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"(click)="conformBtn()"> 
+                            <img class="icon-image col-3" data-bs-target="#thirdModal" data-bs-toggle="modal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU" (click)="cancelledBtn()">
                                  </div>
                         <hr id="hn">
                         <div class="row">
@@ -84,7 +84,7 @@
                         <div class="row">
                           <p class="col-6  appoint-date" >{{appointment.date}}</p>
                         </div>
-                        <hr>
+                        <hr class="hrtag">
                         <div class="row" >
                             <a class="col-6 hyperlinks">View Detail</a>
                             <a class="col-6 hyperlinks">Give feedback</a>
@@ -99,3 +99,131 @@
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+  <div class="container">
+    <!-- <button type="button" class="accept" data-bs-target="#myModal" data-bs-toggle="modal"></button> -->
+  
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+            <div class="modal-title" >APPROVAL
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <hr>
+        <div class="modal-body" *ngFor="let data of userData">
+          <main>
+          <div class="row">
+            <div class="col-6">
+            <label class="form-label1">Patient Name: </label><br>
+            <label class="l1">{{data.PatientName}}</label>
+           <br>
+          </div>
+          
+          <div class="col-6">
+            <label class="form-label1">Date: </label><br>
+              <label class="l1">{{data.Date}}</label>
+          
+        </div>
+        </div>
+        <br>
+        <div class="row"> 
+          <div class="col-6">
+          <label class="form-label4">Injury: </label><br>
+          <label class="l4">{{data.Injury}}</label>
+           <br>
+          </div>
+            
+           <div class="col-6">
+              <label class="form-label4">Time: </label><br>
+              <label class="l4">{{data.Time}}</label>
+            
+          </div>
+          </div>
+          <br>
+  
+          <div class="div5">
+              <label class="form-label5">Tests: </label><br>
+            
+              <mat-form-field class="example-chip-list">
+                
+                <mat-chip-list #chipList aria-label="Test selection">
+                  <mat-chip
+                    *ngFor="let test of tests"
+                    (removed)="remove(test)">
+                    {{test}}
+                    <button matChipRemove>
+                      <mat-icon>&times;</mat-icon>
+                    </button>
+                  </mat-chip>
+                  
+                </mat-chip-list>
+                <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                  <mat-option class="ddddd" *ngFor="let test of filteredTests | async" [value]="test">
+                    {{test}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+              
+              </div>
+          
+            <div class="div6">
+              <label class="form-label6">Additional Instruction</label><br>
+              <textarea class="ddd"> </textarea>
+            
+       
+        <br>
+          <button type="button" class="confirm" data-bs-toggle="modal" data-bs-target="#secondModal">Confirm</button>
+          <button class="cancel" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    
+      </main>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container2">
+  <div class="modal" id="secondModal">
+    <div class="modal-dialog">
+      <div class="modal-content1">
+        <main>
+          <div class="div2"> 
+          
+          <h6 class="success">Successful</h6>
+          <p class="been">The appointment has been successfully scheduled. we have sent an email with the appointment detail to the patient's email ID</p>
+         <div class="cls">
+          <button class="close1" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+        </main>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="container1">
+    <!-- <button type="button" class="decline" data-bs-target="#thirdModal" data-bs-toggle="modal"></button> -->
+  
+    <div class="modal" id="thirdModal">
+      <div class="modal-dialog">
+         <div class="modal-content">
+           <main>
+          <div class="div1"> 
+          
+          <h6 class="decl">Declined</h6>
+          <p class="you">Your appointment has been Declined.</p>
+          <div class="clss">
+          <button class="close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+        </main>
+    </div>
+    
+    </div>
+  
+  </div>
