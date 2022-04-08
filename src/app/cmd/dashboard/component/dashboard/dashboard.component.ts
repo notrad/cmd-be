@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
   selectedValue: string = '';
   imageurl='https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/Partnerships/GoodwillAmbassadors/Emma-Watson-headshot-2016_300pxTall.jpg?la=en';
   employeeDataObserver: Subscription = new Subscription;
+
  
     
 
@@ -43,5 +44,12 @@ export class DashboardComponent implements OnInit {
   cancelledNumber=0;
   acceptednumber=0;
   totalnumber=0;
-
+ conformBtn(){
+   this.acceptednumber=this.acceptednumber+1;
+   this.totalnumber=this.acceptednumber+this.cancelledNumber;
+ }
+ cancelledBtn(){
+   this.cancelledNumber=this.cancelledNumber+1;
+   this.totalnumber=this.cancelledNumber+this.acceptednumber;
+ }
 }

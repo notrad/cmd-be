@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="prescription-history.component.scss">
 
-<div class="card container  rtdd" >
+
+<div class="card container rtdd" >
     <div class="card-body">
-        <p class="title">Prescription History</p>
+        <button mat-button class="buttons">
+        <p class="title" (click)="add()">Prescription History</p>
+    </button>
          <!-- <hr> not include  -->
          <div class="thick-line" ></div>
         <div class="card yyyy" *ngFor="let data of pre;let i= index">
@@ -44,3 +46,5 @@
         <br>  
     </div>    
 </div>    
+
+

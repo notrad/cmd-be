@@ -124,6 +124,41 @@
       "medicine": "",
       "cycle": "",
       "description": ""
+    },
+    {
+      "id": 4,
+      "duration": "",
+      "medicine": "",
+      "cycle": "",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "duration": "wqe",
+      "medicine": "wqe",
+      "cycle": "asd",
+      "description": "qweeqwwqewqewqe"
+    },
+    {
+      "id": 6,
+      "duration": "wqe",
+      "medicine": "wqe",
+      "cycle": "asd",
+      "description": "qweeqwwqewqewqe"
+    },
+    {
+      "id": 7,
+      "duration": "wqewqe",
+      "medicine": "21213",
+      "cycle": "wqewq",
+      "description": "wqewqewqkhelwqj"
+    },
+    {
+      "id": 8,
+      "duration": "",
+      "medicine": "",
+      "cycle": "",
+      "description": ""
     }
   ],
   "patientinfolist": [
@@ -142,42 +177,56 @@
   ],
   "vieweditcomment": [
     {
+      "comments": "asdwqe",
       "id": 1
     },
     {
+      "comments": "asdwqe123",
       "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
     }
   ],
   "editSymptoms": [
     {
-      "symptomName": "Sympton 1",
-      "value": "Reading 1",
-      "doctorName": "Doc 1",
+      "symptomName": "Fever",
+      "value": "104 Degree",
+      "doctorName": "Ajay",
       "id": 1
     },
     {
-      "symptomName": "Sym 1",
+      "symptomName": "Itching",
       "value": "Read 1",
       "doctorName": "Doc 1",
       "id": 2
     },
     {
-      "symptomName": "sym 2",
+      "symptomName": "Blood in Urine",
       "value": "read 2",
       "doctorName": "doc 2",
       "id": 3
+    },
+    {
+      "symptomName": "Weight Loss",
+      "value": "read 3",
+      "doctorName": "doc 3",
+      "id": 4
+    },
+    {
+      "symptomName": "Diabaties",
+      "value": "read 3",
+      "doctorName": "doc 3",
+      "id": 5
+    },
+    {
+      "symptomName": "sym 4",
+      "value": "read 4",
+      "doctorName": "doc 4",
+      "id": 6
+    },
+    {
+      "symptomName": "sym 5",
+      "value": "read 5",
+      "doctorName": "doc 5",
+      "id": 7
     }
   ]
 }

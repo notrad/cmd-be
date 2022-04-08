@@ -1,9 +1,11 @@
-<div class="box">
+<div class="container ">
+<div class="box rtdd">
     <div class="title">
         <h1>Appointment History</h1>
 
         <div class="filter">
             <select [(ngModel)]="filterYear" (change)="filterOnYear()">
+                <option value=""><span class="abc">All</span></option>
                 <option *ngFor="let year of appointmentYears">{{ year }}</option>
               </select>
         </div>
@@ -24,3 +26,4 @@
         </li>
     </ul>
     </div>
+</div>

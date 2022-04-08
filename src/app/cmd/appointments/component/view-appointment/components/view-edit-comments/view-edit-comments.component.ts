@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder } from '@angular/forms';
 import { PatientInfoService } from 'src/app/services/patientInfo.service';
+import { SymptomService } from 'src/app/services/symptom.service';
+import { ViewEditCommentService } from 'src/app/services/vieweditcomment.service';
 import { commentList } from './commentlist.module';
 
 @Component({
@@ -10,24 +12,27 @@ import { commentList } from './commentlist.module';
 })
 export class ViewEditCommentsComponent implements OnInit {
 
-  commentValue!: FormGroup;
-  commentObj !: commentList;
-
- 
-  
-  constructor( private api : PatientInfoService, private formbuilder : FormBuilder ) { }
+  addComments !: FormGroup
+  constructor(private api :  ViewEditCommentService ,private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-    this.commentValue=this.formbuilder.group({
-      Comment : ['']
-    })
+    this.addComments = this.formBuilder.group({
+      comments: ['']
+      
+    });
   }
+addComment() {
   
-
-  postComment(){
-    
-    console.log(this.commentValue);
-     this.commentObj.Comment = this.commentValue.value.Comment;
-  }
-
+      this.api.postComment(this.addComments.value).subscribe({
+        next: (res) => {
+          alert('product added successfully');
+          
+          console.log(res);
+          
+        },
+        error: () => {
+          alert('error to add symptoms');
+        },
+      });
+    }
 }

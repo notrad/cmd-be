@@ -1,12 +1,13 @@
 .rtdd{
 
-    height: 500px; ;
-    width: 30%;
+    height: 302px;  // 500 to 302 after merge
+    width: 326px; // 30% to 326
     margin-top: 50px;
     overflow-x: hidden;
     overflow-y: scroll;
-
 }
+
+
 
 .yyyy{
     margin-left: 5px;
@@ -90,4 +91,10 @@
     border-radius: 10px;
   }
 
+
+  .buttons{
+    padding: 0;
+    border: none;
+    background: none;
+  }
 

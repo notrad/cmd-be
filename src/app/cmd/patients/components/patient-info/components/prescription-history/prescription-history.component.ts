@@ -4,6 +4,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { prescriptionHistory } from './prescriptionHistory.model';
 import { prescriptionApi } from 'src/app/services/prescriptionHistory.service';
+import { MatDialog } from '@angular/material/dialog';
+import { AddEditSymptonHistoryComponent } from '../view-symptons-history/components/add-edit-sympton-history/add-edit-sympton-history.component';
+import { AddPrescriptionComponent } from './components/add-prescription/add-prescription.component';
 
 // interface PresDetails{​​​​​​  sym: string, date:string, time:string, sym1:string, sym2:string, sym3:string}​​​​​​
 
@@ -15,7 +18,7 @@ import { prescriptionApi } from 'src/app/services/prescriptionHistory.service';
 })
 export class PrescriptionHistoryComponent implements OnInit {
 
-  constructor(private api:prescriptionApi) { }
+  constructor(private dialog: MatDialog,private api:prescriptionApi) { }
 
   ngOnInit(): void {
     this.api.getPrescription()
@@ -33,6 +36,11 @@ export class PrescriptionHistoryComponent implements OnInit {
   }
 pre:prescriptionHistory[]=[]
 
+add(){
+  this.dialog.open(AddPrescriptionComponent,{
+    
+  })
+}
 
 public hideRuleContent:boolean[] = [];
 // public buttonName:any = 'Expand';
