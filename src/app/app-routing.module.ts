@@ -39,7 +39,7 @@ const routes: Routes = [
     pathMatch: "full"
   }, 
   {
-    path: "aa",
+    path: "patient-details",
     component: PatientInfoComponent,
 
     pathMatch: "full"
