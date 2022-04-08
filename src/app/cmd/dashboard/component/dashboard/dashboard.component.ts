@@ -20,23 +20,14 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.employeeDataObserver = this._doctorAppointmentsList.getDoctorAppointmentList().subscribe(
-
       {
-
         next: (response) => {
-
           this.patinentsAppointmentList = response;
-
-         
-
         },
 
         error: (error) => {
-
           console.log(error);
-
         }
-
       }
 
     );
