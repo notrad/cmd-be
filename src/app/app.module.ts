@@ -13,6 +13,10 @@ import { AuthGuard } from './core/guards/auth.guard';
 import { TokenInterceptor } from './core/interceptors/token.interceptor';
 import { DashboardDoctorAppointmentsService } from './core/services/dashboard-doctor-appointments.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatAutocompleteModule
+
   ],
   providers: [
     AuthService,

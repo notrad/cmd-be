@@ -40,6 +40,7 @@ const routes: Routes = [
   }, 
   {
     path: "patient-details",
+    canActivate: [AuthGuard],
     component: PatientInfoComponent,
 
     pathMatch: "full"

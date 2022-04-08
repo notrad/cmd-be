@@ -172,7 +172,7 @@ a{
 .appoint-date{
     text-align: center;
     font-size: 0.6rem;
-    margin-top: -1.0rem;
+    margin-top: -45px;
 }
 .appoint-status{
     border-left: 2px solid gray;
@@ -184,8 +184,13 @@ a{
     font-style: italic;
 
 }
+
+.hrtag{
+    margin-top: -23px;
+}
+
 .hyperlinks{
-    margin-top: 16px;
+    margin-top: 13px;
     font-size: 0.8rem;
     font-family: arial;
     text-align: center;
@@ -242,3 +247,198 @@ a{
       height: auto;
     }
   }
+
+
+
+
+  .container .modal .modal-dialog {
+    width: 400px;
+   background: #fff;
+   color: #333;
+   border-radius: 8px; 
+   top: 50px;
+   left: 50px;
+}
+
+.modal-title {
+    color: darkblue;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.btn-close{
+    float: right;
+    padding-top: 15px;
+    margin-right: 10px;
+    color: #333; 
+    height: 2px;
+    width: 2px;
+}
+
+.form-label1{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #01325D;
+}
+
+.l1 {
+    color: #01325D;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-label4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #01325D;
+}
+
+.l4 {
+    color: #01325D;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-label5 {
+    margin-top: -5px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #01325D;
+}
+
+
+.example-chip-list{
+    width: 80%; 
+}
+
+.ddddd {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+
+.form-label6 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #01325D;
+}
+
+.ddd {
+    width: 280px;
+    height: 60px;
+}
+
+.confirm {
+    color: #fff;
+    background-color: #01325D;
+    border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+.cancel {
+    color: black;
+   margin-left: 10px;
+   border-radius: 6px;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+.container2 .modal .modal-dialog {
+    width: 300px;
+   background: #fff;
+   color: #333;
+   border-radius: 10px;
+    top: 230px;
+   left: 50px;
+} 
+
+.div2 .success {
+    color: darkblue;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.div2 .been {
+    padding-left: 10px;
+    padding-top: 5px;
+    color: darkblue;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.div2 .cls{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.div2 .close1 {
+    font-size: 13px;
+    color: #fff;
+    background-color: #01325D;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+.container1 .modal .modal-dialog {
+    width: 250px;
+   background: #fff;
+   color: #333;
+   border-radius: 10px;
+    top: 230px;
+   left: 50px;
+} 
+
+.div1 .decl {
+    color: darkblue;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.div1 .you {
+    color: darkblue;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.div1 .close {
+    font-size: 13px;
+    color: #fff;
+    background-color: #01325D;
+    border-radius: 4px;
+}
+
+
+.clss{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

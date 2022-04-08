@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-view-edit-account-setting',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewEditAccountSettingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _titleService: Title) { }
   isreadonly = true;
   editing = 0;
   edit(itemId:number){
@@ -22,6 +23,7 @@ export class ViewEditAccountSettingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this._titleService.setTitle('Account Settings');
     this.data();
     this.delete();
   }
