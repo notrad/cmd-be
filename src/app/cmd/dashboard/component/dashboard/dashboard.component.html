@@ -72,8 +72,8 @@
                            <p><i class="bi bi-chat-right-text"></i></p> 
                           </div>
                           <div class="row piped menu-icons2" *ngIf="appointment.isconfirmed == false">
-                            <img class="icon-image col-3" data-bs-target="#myModal" data-bs-toggle="modal" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"(click)="conformBtn()"> 
-                            <img class="icon-image col-3" data-bs-target="#thirdModal" data-bs-toggle="modal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU" (click)="cancelledBtn()">
+                            <img class="icon-image col-3" data-bs-target="#myModal" data-bs-toggle="modal" src="https://cutewallpaper.org/24/green-check-mark-icon-transparent-background/2081422813.jpg"> 
+                            <img class="icon-image col-3" data-bs-target="#thirdModal" data-bs-toggle="modal" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlM3XOXwBNABV1EgdcksQ2Y3nokxKsNfLstkoNkyj3mjj3rQn2aOw2t5SNWMvOOibgm90&usqp=CAU" >
                                  </div>
                         <hr id="hn">
                         <div class="row">
@@ -174,8 +174,8 @@
             
        
         <br>
-          <button type="button" class="confirm" data-bs-toggle="modal" data-bs-target="#secondModal">Confirm</button>
-          <button class="cancel" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="confirm" data-bs-toggle="modal" data-bs-target="#secondModal"  (click)="conformBtn()">Confirm</button>
+          <button class="cancel" data-bs-dismiss="modal" >Cancel</button>
       </div>
     
       </main>
@@ -217,7 +217,7 @@
           <h6 class="decl">Declined</h6>
           <p class="you">Your appointment has been Declined.</p>
           <div class="clss">
-          <button class="close" data-bs-dismiss="modal">Close</button>
+          <button class="close" data-bs-dismiss="modal" (click)="cancelledBtn()" >Close</button>
         </div>
       </div>
         </main>
