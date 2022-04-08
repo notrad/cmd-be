@@ -29,13 +29,26 @@
         <small>{{date}}</small>
       </div>
 
-      <div class="dropdown">
-        <div ngbDropdown class="d-inline-block">
+      <!-- <div class="dropdown">
+         <div ngbDropdown class="d-inline-block"> 
           <button class="btn btn-sm" id="dropdownBasic1" ngbDropdownToggle></button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <div>Comment: {{comment}}</div>
-            <div>Test: {{test}}</div>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1"> 
+            <div><strong>Comment: </strong>{{comment}}</div>
+            <div><strong>Tests: </strong> {{test}}</div>
           </div>
+        </div>
+        
+      </div> -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle btn-drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+        </button>
+        <div class="dropdown-menu showbox" aria-labelledby="dropdownMenuButton">
+          <!-- <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a> -->
+          <div><strong>Comment: </strong>{{comment}}</div>
+            <div><strong>Tests: </strong> {{test}}</div>
         </div>
       </div>
     </div>

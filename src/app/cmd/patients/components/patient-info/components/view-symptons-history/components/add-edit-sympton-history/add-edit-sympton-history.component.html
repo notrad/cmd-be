@@ -1,1 +1,32 @@
-<p>add-edit-sympton-history works!</p>
+
+<div class="main-container">
+    <div class="container">
+    <strong><h1 mat-dialog-title bold >Symptom Details</h1></strong>
+    
+    
+    <hr>
+    <form [formGroup]="addSymptom">
+      <div class="example-container">
+        <mat-form-field hintLabel="Eg.Diabetes , headache" appearance="fill">
+          <input formControlName = "symptomName" matInput  placeholder="Search for Symptoms" width="100%">
+          
+        </mat-form-field>
+    </div>
+    <div class="example-container">
+        <mat-form-field hintLabel="Eg.250 Diabetes/ Diabetes ,melitus" appearance="fill">
+          <input formControlName = "value" matInput  placeholder="Readings" width="100%">
+        </mat-form-field>
+    </div>
+    <div class="example-container">
+        <mat-form-field  appearance="fill">
+          <input formControlName = "doctorName" matInput  placeholder="Search for Doctor" width="100%">
+        </mat-form-field>
+    </div>
+    
+    </form>
+    <button mat-button color="primary"  (click)="addSymptoms()">
+        Add Symptoms
+    </button>
+    
+    </div>
+    </div>

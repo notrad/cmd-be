@@ -25,5 +25,29 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Roboto' !important;
+    font-family: 'Roboto';
 }
+
+
+
+.mat-dialog-container{
+
+    border-radius: 25px !important;
+  
+    padding: 0px !important;
+  
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-flex{
+  
+    background-color: white;
+  
+  }
+  
+  
+  
+  .dialog-responsive{
+  
+    width: 100%;
+  
+  }

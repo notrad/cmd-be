@@ -18,6 +18,9 @@ import { AppointmentSchudleComponent } from './component/add-appointment/compone
 import { AppointmentConfirmationComponent } from './component/add-appointment/components/appointment-confirmation/appointment-confirmation.component';
 import { ViewFeedbackComponent } from './component/view-feedback/view-feedback.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 const COMPONENT = [
   AppointmentTilesComponent,
@@ -35,6 +38,7 @@ const COMPONENT = [
   AppointmentSchudleComponent,
   AppointmentConfirmationComponent,
   ViewFeedbackComponent,
+  
 ];
 
 @NgModule({
@@ -44,7 +48,8 @@ const COMPONENT = [
   imports: [
     CommonModule,
     AppointmentsRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
   ],
   exports:[
     ViewAllAppointmentComponent

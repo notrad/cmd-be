@@ -11,7 +11,13 @@ import { PrescriptionHistoryComponent } from './components/patient-info/componen
 import { AddPrescriptionComponent } from './components/patient-info/components/prescription-history/components/add-prescription/add-prescription.component';
 import { ViewPrescriptionDetailsComponent } from './components/patient-info/components/prescription-history/components/view-prescription-details/view-prescription-details.component';
 import { AppointmentTileComponent } from './components/patient-info/components/appointment-history/appointment-tile/appointment-tile.component';
-import { FormsModule } from '@angular/forms';
+
+
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -29,7 +35,14 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PatientsRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatInputModule,
+    MatDialogModule,
+    FormsModule,
+    SharedModule
   ]
 })
 export class PatientsModule { }

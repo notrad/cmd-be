@@ -1,1 +1,39 @@
-<p>view-symptons-history works!</p>
+
+<div class="box-container mt-5">
+
+    <div class="heading">
+      <h1 class="head">Symptoms History</h1>
+      <button mat-button class="buttons">
+        <img src="../../../../../../../assets/images/add.png" (click)="add()">
+      </button>
+    </div>
+    <div class="box">
+      <table class="table mt-3" id="scroller">
+        <tbody>
+          <tr *ngFor="let row of symptomDetails ;let i = index;trackBy:trackSymptomsH" class="editrow">
+            <td class="Symptom">{{ row.symptomName }}
+              <div class="expandCollapse">
+                <button class="show" (click)="toggle(i)">
+                  {{hideRuleContent[i] ? 'Hide ' : 'Show'}}
+                  <i class="fa-solid fa-chevron-down ms-1"></i>
+                </button>
+              </div>
+              <div class="expandCollapseContent" *ngIf="hideRuleContent[i]">
+                <div class="value">{{row.value}}</div>
+                <div class="Dr">{{row.doctorName}}</div>
+              </div>
+            </td>
+            <td>
+              <img src="./../../../../assets/images/pen.png" alt="" (click)="editSymp(row)" class="edit">
+              <!-- <mat-icon (click)="editSymp(row)" class="edit">edit</mat-icon> -->
+            </td>
+            <td>
+              <img src="./../../../../assets/images/delete.png" alt="" (click)="delete(row.id)" class="close">
+              <!-- <mat-icon (click)="delete(row.id)" class="close">close</mat-icon> -->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

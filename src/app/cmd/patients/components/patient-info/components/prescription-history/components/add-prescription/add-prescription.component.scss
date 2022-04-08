@@ -1,0 +1,372 @@
+
+//         .container {
+//             background-color: #ACCEF7;
+//             display: grid;
+//             grid-template-columns: 1fr 2fr;
+//             gap: 20px;
+//             justify-content: center;
+//             align-items: center;
+//             height: 100vh;
+//         }
+
+//         .card {
+//          background-color: #fff;
+//          color: #333;
+//          border-radius: 20px;
+//          box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+//          padding: 20px;
+//          margin: 10px;
+//          position: relative;
+//          height: 50%;
+//          width: 60%;
+//          top: 40px;
+//          right: 60%;
+         
+//      }
+//         //  .box2 {
+//         //   background-color: #fff;
+//         //   color: #333;
+//         //   border-radius: 20px;
+//         //   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+//    //}
+//    //       padding: 20px;
+//    //       margin: 10px;
+//    //      position: relative;
+//    //       height: 60%;
+//    //       width: 60%;
+//    //       left:40%
+//    //   }
+
+
+//         .showcase-form .form-control {
+//             margin: 30px 0;
+//         }
+
+//         .showcase-form input[type="text"],
+//         .showcase-form input[type="none"] {
+//             border: 0;
+//             border-bottom: 1px solid #1a5662;
+//             width: 100%;
+//             padding: 3px;
+//             font-size: 16px;
+//             font-weight: 500;
+//         }
+//       // .Medicinename{
+//       //          border: none;
+//       //          border-bottom: 1px solid #1a5662;
+//       //          width: 100%;
+//       //          padding: 3px;
+//       //          font-size: 13px;
+//       //          font-weight: 500;
+
+//       //}
+
+//         .showcase-form input[type="submit"] {
+//             width: 100%;
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             left: 0;
+//             border-radius: 0 0 20px 20px;
+//             padding: 15px 30px;
+//             font-size: 20px;
+//         }
+
+//         .showcase-form input:focus {
+//             outline: none;
+//         }
+
+.btn {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+   
+    
+}
+
+.btn1{
+    background-color: #07677a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 50px;
+}
+
+.btn2{
+    background-color: #28374d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width:100%;
+    font-size: 100%;
+    // bottom: 0;
+    // padding: 0;
+    // margin: 0;
+}
+
+//         h2{
+//             text-align: left;
+//         }
+//         .text-muted {
+//          --bs-text-opacity: 1;
+//          color: #cad3db!important;
+//          font-size: x-small;
+//          font-family: Verdana, Geneva, Tahoma, sans-serif;
+//      }
+//      dt {
+//       font-weight: 450;
+//       font-size: 200%;
+//       color: #0e434e;
+//   }
+//   dd{
+//      color:#cad3db;
+//   }
+//   .Prescription{
+//      color: #07677a;
+//      text-align: center;
+//  }
+//  .details{
+//     color: #28374d;
+//  }
+//  .title{
+//     margin-bottom: 150%;
+//     color: white;
+//     padding-left: 85%;
+//     font-size:600%;
+//     font-stretch: ultra-expanded;
+//  }
+// .box11{
+//     // display: block;
+//     border-radius: 20px;
+//     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+//     margin: 10px;
+//     position: relative;
+
+
+
+// }    
+
+// .container{
+//     background-color: #ACCEF7;
+//     height: 100vh;
+// }
+
+// .box{
+//     display: flex;
+// }
+
+// .card1{
+//     margin-left: 20%;
+//     border-radius: 40px; 
+//     box-shadow: 0 3px 10px rgb(0 0 0 / 20%); 
+//     background-color: aliceblue; 
+//     width: 30%; 
+//     padding: 30px;
+// }
+
+// .card2{
+//     margin-left: 10%; 
+//     border-radius: 40px; 
+//     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+//     background-color: aliceblue; 
+//     width: 30%;
+//     padding: 30px;
+// }
+// .title{
+//     display: flex;
+// }
+
+.container{
+background-color:#5ec9e4;
+height: 100vh;
+}
+
+.title{
+display: flex;
+color: white;
+height: 30%;
+align-items: center;
+margin-left: 10%;
+
+
+
+}
+.box{
+display: flex;
+
+}
+.card1{
+margin-left: 10%;
+border-radius: 40px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 20%); 
+background-color: white; 
+width: 30%; 
+height: 450px;
+
+}
+.card2{
+margin-left: 5%; 
+border-radius: 40px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 20%); 
+background-color: white; 
+width: 50%;
+padding: 30px;
+height: 450px;
+
+}
+.button, input, optgroup, select, textarea {
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+border: none;
+border-bottom: 2px solid #1a5662;
+width: 100%;
+color: rgb(15, 14, 14);
+}
+.Prescription{
+color: #07677a;
+text-align: center;
+font-size: 110%;
+}
+.text-muted {
+--bs-text-opacity: 1;
+color: #c0cdd8!important;
+font-size: 13px;
+font-family: revert;
+}
+.PresDetails{
+font-size: 20px;
+font-weight: bold;
+color:  #0c2b59;
+text-align: center;
+
+}
+dt {
+font-weight: 450;
+font-size: 200%;
+  color: #0e434e;
+}
+dd{
+ color:#6f7172;
+//  border-bottom: 2px solid #bac7ca;
+}
+.t1 .r{
+font-size:120px;
+font-weight: bolder;
+}
+.btn-close{
+font-size: 90px;
+margin-left: 60px;
+
+
+}
+.button1{
+background-color:  #07677a;
+font-size: 30px;
+
+}
+.button2{
+background-color: #28374d;
+height:60px;
+font-size:30px ;
+font-weight: bold;
+color: white;
+
+
+}
+.title2{
+display: flex;
+}
+
+.h1, h1 {
+font-size: 30px;
+font-weight: bold;
+}
+.h2,h2  {
+font-size: 25px;
+font-weight: bolder;
+padding-left: 38%;
+color: #3e4445;
+}
+.three{
+padding-left:30%;
+}
+.crocine{
+display: flex;
+// border-bottom: 1px solid red;
+// border-bottom
+
+
+}
+.thirtyfive{
+font-size:xx-large;
+padding-left:10%;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight:400;
+color: #3e4445;
+}
+.vicks{
+display:flex;
+}
+.dolo{
+display: flex;
+}
+.vertical {
+border-right: 2px solid #afafaf;
+height: 50px;
+position: relative;
+right: 25%;
+left: 40px;
+}
+.div1 {
+width: 100px;
+height: 25px;
+border-radius:5px;
+text-align:center;
+background-color:#07677a;
+color:white;
+border: 1px;
+padding-top:2px;
+margin-left: 16%;
+}
+
+.Medicinename{
+padding-left: 50px;
+padding-right: 50px;
+
+}
+
+h3{
+padding: 20px 10px 0px 20px;
+}
+
+form input{
+padding-top: 10px;
+}
+.overflow{
+overflow-y: scroll; 
+height: 70%;
+}
+.food{
+display: flex;
+}
+.medicineCycle{
+width:50%;
+}
+.wordfood{
+margin-left: 40px;
+color:#b0a7a7;
+}
+.form-check-label{
+font-size: 14px;
+color:#07677a;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+

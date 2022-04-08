@@ -1,0 +1,139 @@
+.topmargin{
+    margin-left: 12.5%; //added after merge
+}
+.patient_info{
+    height: 10rem;
+    width: 100%;
+    margin-left: 5%; // added after merge
+}
+
+.image{
+    margin: 0% 0% 0% 2%;
+}
+
+.rounded-circle{
+    height: 90px;
+}
+
+.booking{
+    margin-right: 5%;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10%;
+}
+
+.bookicon{
+    padding-top: 7%;
+    padding-left: 8%;
+}
+
+.bookingtext{
+    font-size:smaller;
+    margin-top: -5%;
+    padding-left: 8px;
+}
+
+.fa-clock-o{
+    margin: 25% 21% 21% 15%;
+}
+
+
+
+i{
+    color: rgb(91, 172, 204);
+}
+
+.vlspace{
+    margin-right: -5%;
+}
+
+.vl{
+    height: 70px;
+}
+.vl2{
+    height: 30px;
+    color: lightgray;
+}
+
+// drop icon color
+.bcolor{
+    color: red;
+}
+
+.arrows{
+    padding-left: 0.5%;
+}
+
+.gender{
+    -webkit-text-stroke: 1.2px;
+}
+
+
+.head{
+    margin-left: 7%;
+    margin-top: 3%;
+    color: rgb(5, 5, 66);  
+    font-size: xx-large;
+}
+.downcnt{
+    margin-left: 0%;
+    margin-top: -3%;
+}
+
+.crow{
+    display: flex;
+}
+.col1{
+    margin-left: 80px;
+}
+.ccol{
+    flex:33.3;
+    
+}
+.col2{
+    margin-top: 3%;
+}
+.col3{
+    margin-top: 0%;
+}
+
+
+// .col1{
+//     padding-left: 0;
+//     padding-right: 0;
+// }
+// .col2{
+//     width: 40%;
+// }
+
+// .col3{
+//     height: 352px;
+// }
+
+
+// merging display
+
+// .col-1{
+//     display:grid;
+//     grid: 30%;
+//     height: 50%;
+//     width: 75%;
+//     position: relative;
+//     align-items: center;
+// }
+// .col-2{
+//     display:grid;
+//     grid: 30%;
+//     height: 50%;
+//     width: 75%;
+//     position: relative;
+//     align-items: center;
+// }
+// .col-3{
+//     display:grid;
+//     grid: 30%;
+//     height: 50%;
+//     width: 75%;
+//     position: relative;
+//     align-items: center;
+// }
