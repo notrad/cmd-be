@@ -12,7 +12,7 @@
           <span class="list_name">Dashboard</span>
           </a>
        </li>
-       <li>
+       <li [style.display]="userSettingsVisibility">
           <a>
           <i class='bx bxs-user'></i>
           <span class="list_name">Patients</span>
@@ -24,7 +24,7 @@
           <span class="list_name">Chat Room</span>
           </a>
        </li>
-       <li>
+       <li [style.display]="userSettingsVisibility">
           <a routerLink="/account-settings">
           <i class='bx bx-cog'></i>
           <span class="list_name">Settings</span>

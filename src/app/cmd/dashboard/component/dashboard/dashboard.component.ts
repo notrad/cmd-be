@@ -8,6 +8,7 @@ import {MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 import {MatChipInputEvent} from '@angular/material/chips';
 import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dashboard',
@@ -24,7 +25,7 @@ export class DashboardComponent implements OnInit {
  
     
 
-  constructor(private _doctorAppointmentsList: DashboardDoctorAppointmentsService) { 
+  constructor(private _doctorAppointmentsList: DashboardDoctorAppointmentsService, private _titleService: Title) { 
     this.filteredTests = this.testsCtrl.valueChanges.pipe(
       startWith(null),
       map((fruit: string | null) => (fruit ? this._filter(fruit) : this.allTests.slice())),
@@ -87,6 +88,7 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this._titleService.setTitle('Dashboard');
     this.employeeDataObserver = this._doctorAppointmentsList.getDoctorAppointmentList().subscribe(
       {
         next: (response) => {
