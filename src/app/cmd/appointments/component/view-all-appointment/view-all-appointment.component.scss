@@ -8,6 +8,7 @@
 .profileImage{
     height: 4rem;
     width: 5.3rem;
+    border-radius: 2rem;
 }
 .profileName{
     font-size: 0.9rem;
@@ -34,7 +35,7 @@
     background-color: #e6e6e6;
     border: solid 1px darkgrey;
     border-radius: 15px;
-    margin-top: 1rem;
+    // margin-top: 1rem;
 }
 .piped img {
     border-left: 0.1rem solid #e6e6e6;
@@ -71,3 +72,81 @@ a{
     font-family: arial;
     text-align: center;
 }
+.doc{
+    color: white;
+    font-size: 0.7rem;
+    // letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.chartRoom{
+    color: white;
+    font-size: 0.8rem;
+    display: contents;
+}
+.dashboardmenu{
+    font-size: 0.8rem;
+    color: #01325D;
+    border-radius: 0.5rem;
+    display: grid;
+    height: 2rem;
+    width: 7rem;
+}
+.spacing{
+    padding: 0.6rem;
+}
+.name{color: black;
+    font-size: 0.8rem;
+    padding-right: 1rem;}
+body {
+    background-color: #fbfbfb;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 100px;
+     z-index: 600;
+
+  }
+  .main-style{
+    margin-top: 2rem;
+    margin-left: -107px;
+    margin-right: 1rem;
+  }
+  
+  #sidebarMenu{
+      background-color: #01325D;
+      width:8rem;
+  }
+  .fix-top{
+    margin-left: 10.20rem;
+  }
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }

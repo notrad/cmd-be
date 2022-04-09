@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AppointmentsRoutingModule } from './appointments-routing.module';
 import { AppointmentTilesComponent } from './component/appointment-tiles/appointment-tiles.component';
 import { ViewAllAppointmentComponent } from './component/view-all-appointment/view-all-appointment.component';
 import { ViewAppointmentComponent } from './component/view-appointment/view-appointment.component';
@@ -47,7 +46,6 @@ const COMPONENT = [
   ],
   imports: [
     CommonModule,
-    AppointmentsRoutingModule,
     SharedModule,
     ReactiveFormsModule,
   ],

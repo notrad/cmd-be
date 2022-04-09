@@ -15,6 +15,7 @@ import { PrescriptionHistoryComponent } from './cmd/patients/components/patient-
 import { ViewEditCommentsComponent } from './cmd/appointments/component/view-appointment/components/view-edit-comments/view-edit-comments.component';
 import { AddPrescription } from './services/addPrescription.service';
 import { AddPrescriptionComponent } from './cmd/chat/components/view-suggest-prescription/components/add-prescription/add-prescription.component';
+import { ViewAllAppointmentComponent } from './cmd/appointments/component/view-all-appointment/view-all-appointment.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,7 @@ const routes: Routes = [
 
     pathMatch: "full"
   }, 
+  {path:'allAppointments', component:ViewAllAppointmentComponent},
   {
     path:"cmd",
     canActivate: [AuthGuard],
