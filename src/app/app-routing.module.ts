@@ -43,10 +43,14 @@ const routes: Routes = [
     path: "patient-details",
     canActivate: [AuthGuard],
     component: PatientInfoComponent,
-
     pathMatch: "full"
   }, 
-  {path:'allAppointments', component:ViewAllAppointmentComponent},
+  {
+    path:'allAppointments', 
+    canActivate: [AuthGuard],
+    component:ViewAllAppointmentComponent,
+    pathMatch: "full"
+  },
   {
     path:"cmd",
     canActivate: [AuthGuard],
