@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PatientModel } from './_models/patientModel';
 import { ViewAllPatientsService } from './service/view-all-patients.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -22,11 +23,12 @@ export class ViewAllPatientComponent implements OnInit {
   
     filterString: string = '';
   
-    constructor(private formBuilder : FormBuilder, private service : ViewAllPatientsService) { }
+    constructor(private formBuilder : FormBuilder, private service : ViewAllPatientsService, private _titleService: Title) { }
   
 
 
   ngOnInit(): void {
+    this._titleService.setTitle("Patients | CMD");
     this.getpres();
     this.patientForm = this.formBuilder.group({
       id: [''],

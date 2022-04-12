@@ -23,7 +23,7 @@ export class ViewEditAccountSettingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._titleService.setTitle('Account Settings');
+    this._titleService.setTitle('Account Settings | CMD');
     this.data();
     this.delete();
   }

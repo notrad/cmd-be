@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { PatientInfoService } from '../../../../services/patientInfo.service';
 import { infoList } from './infolist.module';
 //import info from '../../../../../../faker.json'; // importing json file
@@ -12,9 +13,10 @@ export class PatientInfoComponent implements OnInit {
 
   
 infolist: infoList[] = [];
-  constructor(private api: PatientInfoService) { }
+  constructor(private api: PatientInfoService, private _titleService: Title) { }
 
   ngOnInit(): void {
+    this._titleService.setTitle('Patient Details | CMD');
     this.getPatientInfo();
   }
 

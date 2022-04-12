@@ -20,7 +20,7 @@ export class TopHeaderComponent implements OnInit {
     this.loggedInUserRole = localStorage['user_role'];
     if(this.loggedInUserRole == 'doctor'){
       this.loggedInUserName = 'Dr. ' + localStorage['user_name'];
-      if (this._router.url == '/') {
+      if (this._router.url == '/' || this._router.url == '/dashboard') {
         this.navAppointmentVisibility = 'visible';
       } else {
         this.navAppointmentVisibility = 'hidden';
