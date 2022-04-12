@@ -1,0 +1,95 @@
+.search {
+    float: right;
+    //padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 390px;
+    font-size: 17px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    //background-image: url('search.jpg');
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 10px 5px 10px 30px;
+   
+    
+   
+    
+}
+
+.nav{
+    margin-left: 230px;
+    margin-top: 0px;
+}
+
+.nav1{
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+input {
+  padding: 1% 6%;
+  margin: 1% 1%;
+  background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 0;
+  background-position: 12px;
+  background-size: 16px;
+}
+
+.hrspace{
+  margin-bottom: 0%;
+}
+
+
+
+img{
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 5px;
+
+}
+
+
+
+
+.searchbox{
+  width: 10px;
+  height: 10px;
+  display: flex;
+  border-radius: 0 5px 5px 0;
+}   
+  
+.container{
+  height: 20px;
+  background-color: whitesmoke;
+}
+
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+.page{
+  position: relative;
+ 
+  text-align: center;
+  margin-left: 30%;
+  bottom: -10px;
+}
+ 
+
+
+
+

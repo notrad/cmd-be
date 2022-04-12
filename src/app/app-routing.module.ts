@@ -18,6 +18,7 @@ import { AddPrescriptionComponent } from './cmd/chat/components/view-suggest-pre
 import { ViewAllAppointmentComponent } from './cmd/appointments/component/view-all-appointment/view-all-appointment.component';
 import { ViewFeedbackComponent } from './cmd/appointments/component/view-feedback/view-feedback.component';
 import { RoleGuard } from './core/guards/role.guard';
+import { ViewAllPatientComponent } from './cmd/patients/components/view-all-patient/view-all-patient.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,10 @@ const routes: Routes = [
     path:"viewfeedback", 
     component: ViewFeedbackComponent
   },
-  
+  {
+    path:"view",
+    component:ViewAllPatientComponent
+  },
   {
     path:"account-settings",
     canActivate: [AuthGuard],
