@@ -9,10 +9,11 @@ import { AppointmentsService } from '../../appointments.service';
   styleUrls: ['./view-all-appointment.component.scss']
 })
 export class ViewAllAppointmentComponent implements OnInit {
+  
   patinentsAppointmentList :any;
-
+  showGiveFeedback=false;
+  
   constructor(private appoinmentService:AppointmentsService) { }
-
   ngOnInit(): void {
     this.appoinmentService.getAllAppointments().subscribe(response=>{
       console.log(response);
