@@ -30,7 +30,7 @@ const routes: Routes = [
     component: ViewFeedbackComponent
   },
   {
-    path:"view",
+    path:"all-patients",
     component:ViewAllPatientComponent
   },
   {
