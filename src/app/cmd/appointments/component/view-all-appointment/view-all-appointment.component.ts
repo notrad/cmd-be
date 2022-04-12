@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
+import { Title } from '@angular/platform-browser';
 import { AuthService } from 'src/app/core/services/auth.service';
 import AppointmentList from '../../../../../assets/mockData/appointmentList.json';
 import { AppointmentsService } from '../../appointments.service';
@@ -11,10 +12,11 @@ import { AppointmentsService } from '../../appointments.service';
 export class ViewAllAppointmentComponent implements OnInit {
   
   patinentsAppointmentList :any;
-  showGiveFeedback=false;
-  
-  constructor(private appoinmentService:AppointmentsService) { }
+
+  constructor(private appoinmentService:AppointmentsService, private _titleService: Title) { }
+
   ngOnInit(): void {
+    this._titleService.setTitle('Dashboard | CMD');
     this.appoinmentService.getAllAppointments().subscribe(response=>{
       console.log(response);
       this.patinentsAppointmentList=response;
