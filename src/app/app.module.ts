@@ -17,6 +17,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { RoleGuard } from './core/guards/role.guard';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
   providers: [
     AuthService,
     AuthGuard,
+    RoleGuard,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptor,

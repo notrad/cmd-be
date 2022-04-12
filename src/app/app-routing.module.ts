@@ -17,6 +17,7 @@ import { AddPrescription } from './services/addPrescription.service';
 import { AddPrescriptionComponent } from './cmd/chat/components/view-suggest-prescription/components/add-prescription/add-prescription.component';
 import { ViewAllAppointmentComponent } from './cmd/appointments/component/view-all-appointment/view-all-appointment.component';
 import { ViewFeedbackComponent } from './cmd/appointments/component/view-feedback/view-feedback.component';
+import { RoleGuard } from './core/guards/role.guard';
 
 const routes: Routes = [
   {
@@ -36,13 +37,13 @@ const routes: Routes = [
   {
     path:"",
     component:DashboardComponent,
-    canActivate: [AuthGuard],
+    canActivate: [RoleGuard],
     pathMatch: "full"
   },
   {
     path: "dashboard",
     component: DashboardComponent,
-    canActivate: [AuthGuard],
+    canActivate: [RoleGuard],
     pathMatch: "full"
   }, 
   {
