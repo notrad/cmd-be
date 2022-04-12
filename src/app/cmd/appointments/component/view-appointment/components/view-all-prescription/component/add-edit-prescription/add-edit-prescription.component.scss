@@ -1,0 +1,53 @@
+.card1{
+    margin-left: 10%;
+    border-radius: 40px; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%); 
+    background-color: white; 
+    width: 30%; 
+    height: 450px;}
+.button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    border-bottom: 1px solid #1a5662;
+    width: 100%;
+    color: rgb(15, 14, 14);
+    
+}
+
+.text-muted{
+    font-size: small;
+}
+.form-check form-switch{
+    padding-left: 40px;
+}
+.food{
+    padding-left: 40px;
+}
+.medicineCycle{
+    width: 140px !important;
+}
+
+
+.button1{
+    background-color:  #055e70;
+    font-size: 20px;
+    border: none;
+    border-end-start-radius:  16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-bottom: 15px; 
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer !important;
+}
+
+.container{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 30px;
+
+}

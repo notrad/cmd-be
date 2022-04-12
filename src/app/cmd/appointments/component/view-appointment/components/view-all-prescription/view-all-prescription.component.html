@@ -1,33 +1,74 @@
 <app-sidebar></app-sidebar>
 <app-top-header></app-top-header>
 
-<style> </style>
-  <link rel="stylesheet" href="view-all-prescription.component.scss">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<div class="card">
-  <div class="row">
-    <div class="col-10">
-        <h5><strong>Prescription</strong></h5>
-    </div>
-    <div class="col-1">
-      <!-- clicking on add button will show added prescription -->
-      <button class="btn size mx-1"><i class="fa-solid fa-square-plus fa-2x plus" (click)="getpres()"></i>
-      </button>
-    </div>
-  </div>
-  
-<div class="box" *ngFor="let data of prescriptionData" id="number">
-  <div class="container" >
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<div class="card1">
+  <div class="card">
     <div class="row">
-      <div class="col-1"><h6>{{data.duration}}</h6></div>
-    <div class="col"><h6>{{data.Medicine}}</h6></div>
-    <div class="col-1" ><button (click)="deletePres(data)" class="btn size mx 1 class1"><img src="../../../../../../../assets/delete.png" alt="" width="20px" >
-    </button></div>
-      <div class="row-1" class="text-muted" id="text">{{data.cycle}}</div>
-      <div class="col-7" class="text-muted" id="text">{{data.description}}</div>
+      <div class="col-10">
+
+        <h5><strong>Prescription</strong></h5>
+      </div>
+      <div class="col-1">
+       <!-- <a href="/add-edit-prescription"> -->
+        <!-- <button type="button"> -->
+          <i class="fa-solid fa-square-plus fa-2x plus"  (click)="openModal()"  ></i>
+        <!-- </button> -->
+        <!-- </a> -->
+        <!-- </button> -->
+      </div>
+    </div>
+
+    <div class="box" *ngFor="let data of prescriptionData" id="string">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-1"><h6>{{data.duration}}</h6></div> -->
+          <div class="col">
+            <h6>{{data.Medicine}}</h6>
+          </div>
+
+          <div class="col-1" id="pencil"><img src="../../../../../../../assets/assets/pencil.jpg" width="15"  (click)="openModal()"   data-bs-dismiss="modal"> 
+          </div>
+          
+          <div class="col-1"><button (click)="deletePres(data)" class="btn size mx 1 class1"><img
+                src="../../../../../../../assets/assets/delete.png" alt="" width="20px">
+            </button></div>
+          <div class="row">
+            <!--edited-->
+            <div class="col-8">
+              <div class="text-muted" id="text">{{data.cycle}}</div>
+              <div class="text-muted" id="text">{{data.description}}</div>
+              
+            </div>
+            <!-- <div class="col-5" style="align-items:;">After Food</div> -->
+            <div class="col-4"><img src="../../../../../../../assets/assets/food.PNG" width="90px" style="padding-left: 20px;"></div>
+            <!-- <div class="col-5">After Food</div>
+            <img id="abc" src="../../../../../../../assets/Untitled.png" alt="" width="20px !important"> -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-</div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="newmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

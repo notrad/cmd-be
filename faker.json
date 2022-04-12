@@ -1,4 +1,34 @@
 {
+  "viewAllPrescription": [
+    {
+      "id": "1",
+      "duration": "1",
+      "Medicine": "2.Crocin",
+      "cycle": "M-A-N",
+      "description": "Dont use hot water during consume"
+    },
+    {
+      "Medicine": "vicks",
+      "duration": 2,
+      "cycle": "MAN",
+      "description": "Dont use hot water",
+      "id": "zi4yj7J"
+    },
+    {
+      "Medicine": "1.Citrezen",
+      "duration": "",
+      "cycle": "MAN",
+      "description": "Drink more water",
+      "id": "V5Z8d6o"
+    },
+    {
+      "Medicine": "vicks",
+      "duration": 22,
+      "cycle": "asd",
+      "description": "asdd",
+      "id": "k9nhyMy"
+    }
+  ],
   "appointmentList": [
     {
       "name": " Emma Watson(31)",

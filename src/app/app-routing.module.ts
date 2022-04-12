@@ -28,6 +28,11 @@ const routes: Routes = [
     component:ViewEditAccountSettingComponent
   },
   {
+    path:"view",
+    component:ViewAllPrescriptionComponent,
+    pathMatch: "full"
+  },
+  {
     path:"",
     component:DashboardComponent,
     canActivate: [AuthGuard],

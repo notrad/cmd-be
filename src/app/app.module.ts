@@ -17,6 +17,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatChipsModule,
     MatFormFieldModule,
     MatIconModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    ModalModule.forRoot()
 
   ],
   providers: [

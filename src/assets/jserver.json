@@ -27,6 +27,13 @@
       "Medicine": "Dolo",
       "cycle": "M-A-N",
       "description": "Dont use hot water during consume"
+    },
+    {
+      "Medicine": "vicks",
+      "duration": "",
+      "cycle": "MAN",
+      "description": "Dont use hot water while consume",
+      "id": "8EWVf7L"
     }
   ],
   "comments": [],

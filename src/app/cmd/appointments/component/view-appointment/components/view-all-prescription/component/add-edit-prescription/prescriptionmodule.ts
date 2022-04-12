@@ -1,6 +1,8 @@
 export class PrescriptionModel{
-    duration:string="";
-    Medicine:string="";
-    cycle:string="";
-    description:string="";
+    // id:number=;
+    id !: string;
+    duration!:string;
+    Medicine!:string;
+    cycle!:string;
+    description!:string;
 }
