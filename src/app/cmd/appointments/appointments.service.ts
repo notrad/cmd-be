@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppointmentsService {
 
-  url = 'https://cmd-fe.herokuapp.com/api/view-all-patient-appointments';
-  // postArray = [];
+  url = 'http://localhost:3000/viewallappointment';
+  // postArray = []
  
   constructor(private http:HttpClient) { }
 
