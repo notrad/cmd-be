@@ -88,7 +88,7 @@ export class DashboardComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this._titleService.setTitle('Dashboard');
+    this._titleService.setTitle('Dashboard | CMD');
     this.employeeDataObserver = this._doctorAppointmentsList.getDoctorAppointmentList().subscribe(
       {
         next: (response) => {
