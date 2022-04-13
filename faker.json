@@ -25,7 +25,7 @@
       "isconfirmed": false,
       "issue": "Hand injury",
       "status": "All",
-      "status-1": "Cancelled"
+      "status-1": "Confirmed"
     },
     {
       "name": " Emma Watson(31)",
@@ -34,7 +34,7 @@
       "isconfirmed": true,
       "issue": "Hand injury",
       "status": "All",
-      "status-1": "Confirmed"
+      "status-2": "Cancelled"
     },
     {
       "name": " Emma Watson(31)",
@@ -43,7 +43,7 @@
       "isconfirmed": true,
       "issue": "Heart Related issue ",
       "status": "All",
-      "status-1": "Confirmed"
+      "status-2": "Cancelled"
     },
     {
       "name": " Emma Watson(31)",
@@ -52,7 +52,7 @@
       "isconfirmed": true,
       "issue": "Leg injury ",
       "status": "All",
-      "status-1": "Confirmed"
+      "status-2": "Cancelled"
     },
     {
       "name": "Emma Watson(31)",
@@ -61,7 +61,7 @@
       "isconfirmed": false,
       "issue": "Hand injury",
       "status": "All",
-      "status-1": "Confirmed"
+      "status-3": "Closed"
     },
     {
       "name": " Emma Watson(31)",
@@ -70,7 +70,7 @@
       "isconfirmed": true,
       "issue": "Hand injury",
       "status": "All",
-      "status-1": "Confirmed"
+      "status-3": "Closed"
     }
   ],
   "prescription-history": [
@@ -186,12 +186,6 @@
     }
   ],
   "editSymptoms": [
-    {
-      "symptomName": "Fever",
-      "value": "104 Degree",
-      "doctorName": "Ajay",
-      "id": 1
-    },
     {
       "symptomName": "Itching",
       "value": "Read 1",

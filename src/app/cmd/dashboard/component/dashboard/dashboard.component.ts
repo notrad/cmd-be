@@ -113,4 +113,16 @@ export class DashboardComponent implements OnInit {
    this.cancelledNumber=this.cancelledNumber+1;
    this.totalnumber=this.cancelledNumber+this.acceptednumber;
  }
+
+//  filterFunction(){
+//   for (var i = 0; i < 5; i++) {
+//     this.retrieveDataService.fetchData().subscribe(data=>{
+//           if (data[i].type == "question-card") {
+//               this.question = (data[i].question);
+//               this.questions.push(this.question);
+//           }
+//      });  
+//   }
+// }
+
 }
