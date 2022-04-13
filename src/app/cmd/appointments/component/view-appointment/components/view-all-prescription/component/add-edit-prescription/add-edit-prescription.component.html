@@ -1,1 +1,75 @@
-<p>add-edit-prescription works!</p>
+<div class="add-edit-prescription">
+    <div class="Prescription">
+        <h3 id="heading">4th Prescription details</h3>
+    </div>
+    <hr>
+    <div class="container">
+        <form action="" [formGroup]="formValue">
+            <div class="Medicinename">
+                <input formControlName="Medicine" type="text" name="medicineName" id="medicineName"
+                    placeholder="Search For Medicine">
+
+                <p class="text-muted">Eg:tablet,Vicks </p>
+
+
+                <input type="number" name="medicineDuration" id="medicineDuration" placeholder="Medicine duration"
+                    formControlName="duration">
+
+                <p class="text-muted">Ex: days</p>
+
+                <div class="row">
+                    <div class="col-5">
+                        <div class="medicineCycle">
+                            <input type="text" name="medicineCycle" id="medicineCycle" placeholder="Medicine Cycle"
+                                formControlName="cycle">
+
+                            <p class="text-muted">Ex: M-A-N,M-0-N,0-A-N</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <span class="text-muted" class="food">Food</span>
+                        <div class="form-check form-switch" style="display:flex">
+                            <div class="form-check-label" for="switchChecked">After</div>
+                            &nbsp;&nbsp;
+                            <div><span><input class="form-check-input" type="checkbox" id="switchChecked" checked
+                                        style="margin-left:03%"></span></div>
+                            &nbsp;&nbsp;
+                            <div class="form-check-label" for="switchChecked">Before</div>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="text" name="medicineDescription" id="medicineDescription"
+                    placeholder="Medicine Description to patient" formControlName="description">
+
+                <p class="text-muted">Ex: don't use hot water to consume tablets</p>
+            </div>
+
+            <!-- <div class="card-footer">
+               <input type="submit" value="Add medicine" class="btn btn1">
+          </div> -->
+
+            <!-- Wrapper -->
+
+
+        </form>
+    </div>
+
+       
+    <footer  class="button1"  (click)="postPrescriptionDetails()" (click)="getPrescriptionDetail()">
+        Add Medicine
+        <span></span>
+    </footer>
+
+
+
+            
+    <!-- <footer  class="button1" (click)="updatePrescriptionDetails()">Update</footer> -->
+
+    <!-- <footer>
+            
+            <<input type="submit" value="Add Medicine" class="btn btn1" 
+            (click)="getpres()" > -->
+    <!-- </footer> -->
+</div>
