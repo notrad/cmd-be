@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { PrescriptionModel } from '../cmd/appointments/component/view-appointment/components/view-all-prescription/component/add-edit-prescription/prescriptionmodule';
+import { GiveFeedback } from '../cmd/appointments/component/view-feedback/feedback.module';
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+  
  
   constructor(private http: HttpClient) { }
 
@@ -35,5 +37,13 @@ export class ApiService {
     .pipe(map((res: any)=>{
       return res;
     }))
+  }
+  
+  postFeedback(data:any){
+    return this.http.post<any>("http://localhost:3000/feedback/",data)
+  }
+  getFeedback(id:any){
+    return this.http.get<any>("http://localhost:3000/feedback?id="+ id)
+
   }
 }

@@ -1,63 +1,64 @@
 .A{
-    margin-top: 25rem;
-    border: none;
-    text-align: center; 
-    background-color: white;
-    color: blue;
+  margin-top: 25rem;
+  border: none;
+  text-align: center; 
+  background-color: white;
+  color: blue;
+  
+}
+
+.card {
+
+    font-family: Roboto;
+      margin: 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
     
-  }
-  
-  .card {
-  
-      font-family: Roboto;
-        margin: 10px;
-        background-color: #bdc3c7;
-        padding: 10px;
-        border-radius: 8px;
       
+    }
+    .card-body {
+        font-size: 10px;
+        margin-bottom: 10px;
+        color: #171f46;
+        font-weight: bold;
         
-      }
-      .card-body {
-          font-size: 10px;
-          margin-bottom: 10px;
-          color: #171f46;
-          font-weight: bold;
-          
-      }
-      .card-title {
-          text-decoration: underline;
-          font-weight: bold;
-      }
-      .top-card {
-          display: flex;
-        justify-content: center;
-      }
-      .submit-button {
-           font-family: "Roboto";
-           font-size: 16px;
-           background-color: #183b56;
-           color:#ffffff;
-           width: 126px;
-           height: 38px;
-           border-radius: 8px;
-           border-width: 1px;
-           margin-right: 5px;
-           font-weight: bold;
-           margin-top: 10px;
-      }
-      .cancel-button {
-          margin-top: 10px;
-          font-family: "Roboto";
-           font-size: 16px;
-           background-color: #5752ab;
-           color:#171f46;
-           width: 126px;
-           height: 38px;
-           border-radius: 8px;
-           border-width: 1px;
-           margin-right: 5px;
-           font-weight: bold;
-           color: #ffffff;
-          
-      }
+    }
+    .card-title {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .top-card {
+        display: flex;
+      justify-content: center;
+     
+    }
+    .submit-button {
+         font-family: "Roboto";
+         font-size: 16px;
+         background-color: #183b56;
+         color:#ffffff;
+         width: 126px;
+         height: 38px;
+         border-radius: 8px;
+         border-width: 1px;
+         margin-right: 5px;
+         font-weight: bold;
+         margin-top: 10px;
+    }
+    .cancel-button {
+        margin-top: 10px;
+        font-family: "Roboto";
+         font-size: 16px;
+         background-color: #5752ab;
+         color:#171f46;
+         width: 126px;
+         height: 38px;
+         border-radius: 8px;
+         border-width: 1px;
+         margin-right: 5px;
+         font-weight: bold;
+         color: #ffffff;
+        
+    }
 

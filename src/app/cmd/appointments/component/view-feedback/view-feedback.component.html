@@ -1,135 +1,94 @@
+ 
+  <div class = "top-card">
+    <div class="card">
+    <div class="card-body">
+      <form [formGroup]="feedbackForm">
+      <h1 class="card-title">FeedBack Form</h1>
+      <hr>
+    <div>
+        <h5>1.How Satisfied are you with the competence of the doctor? </h5>
+        <div class="card-body">
+         
+    <input  type="radio" name="feedback1" attributes="{'checked' :res[0].feedback1 ==='1'} "formControlName="feedback1" id="inlineRadio1" value="1">
+    <label  for="inlineRadio1">1</label>
 
-    <div class="container mt-5">
-             
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary A" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-             Give FeedBack
-            </button>
-             <button type="button" class="btn btn-primary A" data-bs-toggle="modal" data-bs-target="#exampleModal"  aria-readonly="true" readonly>
-              View FeedBack
-             </button>
-           
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">FeedBack Form</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class = "top-card">
-                        <div class="card" aria-readonly="true">
-                           <div class="card-body">
-                             
-                             
-                           <div>
-                            <h3 class="modal-title" id="exampleModalLabel">FeedBack Form</h3>
-                               <h6>1.How Satisfied are you with the competence of the doctor? </h6>
-                               <div class="card-body">
-                           <input  type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                           <label  for="inlineRadio1">1</label>
-                   
-                           <input  type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                           <label for="inlineRadio2">2</label>
-                   
-                   
-                           <input  type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                           <label for="inlineRadio3">3</label>
-                   
-                           <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                           <label for="inlineRadio4">4</label>
-                   
-                           <input  type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                           <label for="inlineRadio5">5</label>
-                       </div>
-                       <h6>2.How Satisfied are you with the outcome of treatment? </h6>
-                       <div class="card-body">
-                           <input  type="radio" name="inlineRadioOptions2" id="inlineRadio6" value="option6">
-                           <label for="inlineRadio6">1</label>
-                   
-                           <input  type="radio" name="inlineRadioOptions2" id="inlineRadio7" value="option7">
-                           <label  for="inlineRadio7">2</label>
-                   
-                   
-                           <input  type="radio" name="inlineRadioOptions2" id="inlineRadio8" value="option8">
-                           <label for="inlineRadio8">3</label>
-                   
-                           <input type="radio" name="inlineRadioOptions2" id="inlineRadio9" value="option9">
-                           <label for="inlineRadio9">4</label>
-                   
-                           <input  type="radio" name="inlineRadioOptions2" id="inlineRadio10" value="option10">
-                           <label for="inlineRadio10">5</label>
-                       </div>
-                           <h6>3.Would you refer this docter to others</h6>
-                           <div class="card-body">
-                               <input  type="radio" name="inlineRadioOptions3" id="inlineRadio11" value="option11">
-                               <label  for="inlineRadio11">1</label>
-                       
-                               <input type="radio" name="inlineRadioOptions3" id="inlineRadio12" value="option12">
-                               <label for="inlineRadio12">2</label>
-                       
-                       
-                               <input type="radio" name="inlineRadioOptions3" id="inlineRadio13" value="option13">
-                               <label  for="inlineRadio13">3</label>
-                       
-                               <input type="radio" name="inlineRadioOptions3" id="inlineRadio14" value="option14">
-                               <label for="inlineRadio44">4</label>
-                       
-                               <input  type="radio" name="inlineRadioOptions3" id="inlineRadio15" value="option15">
-                               <label for="inlineRadio15">5</label>
-                           </div>
-                               <h6>4.How Satisfied are you with the process of booking appoi</h6>
-                               <div class="card-body">
-                                   <input  type="radio" name="inlineRadioOptions4" id="inlineRadio16" value="option16">
-                                   <label  for="inlineRadio16">1</label>
-                           
-                                   <input type="radio" name="inlineRadioOptions4" id="inlineRadio17" value="option17">
-                                   <label  for="inlineRadio17">2</label>
-                           
-                           
-                                   <input type="radio" name="inlineRadioOptions4" id="inlineRadio18" value="option18">
-                                   <label for="inlineRadio18">3</label>
-                           
-                                   <input  type="radio" name="inlineRadioOptions4" id="inlineRadio19" value="option19">
-                                   <label  for="inlineRadio19">4</label>
-                           
-                                   <input  type="radio" name="inlineRadioOptions4" id="inlineRadio20" value="option20">
-                                   <label  for="inlineRadio20">5</label>
-                               </div>
-                                   <h6>5.Additional Comments</h6>
-                                   <div>
-                                       <textarea rows="5" cols="50"></textarea>
-                                   </div>
-                               </div> 
-                           </div>
-                         </div>
-                   </div>   
-                    <div class="wrapper">
-                    
-                  </div>
-                  </div>
-                  <div class="modal-footer" style="margin-right: 60%;">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" style= "background-color: rgb(7, 7, 109); align-items: left;">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                   
-                  </div>
-                </div>
-              </div>
+    <input  type="radio" name="feedback1" formControlName="feedback1" id="inlineRadio2" value="2">
+    <label for="inlineRadio2">2</label>
+
+
+    <input  type="radio" name="feedback1" formControlName="feedback1" id="inlineRadio3" value="3">
+    <label for="inlineRadio3">3</label>
+
+    <input type="radio" name="feedback1" formControlName="feedback1" id="inlineRadio4" value="4">
+    <label for="inlineRadio4">4</label>
+
+    <input  type="radio" name="feedback1" attributes="{'checked' :res[0].feedback1 ==='5'}" formControlName="feedback1" id="inlineRadio5" value="5">
+    <label for="inlineRadio5">5</label>
+</div>
+<h5>2.How Satisfied are you with the outcome of treatment? </h5>
+<div class="card-body">
+    <input  type="radio" name="feedback2" formControlName="feedback2" id="inlineRadio6" value="1">
+    <label for="inlineRadio6">1</label>
+
+    <input  type="radio" name="feedback2" formControlName="feedback2" id="inlineRadio7" value="2">
+    <label  for="inlineRadio7">2</label>
+
+
+    <input  type="radio" name="feedback2" formControlName="feedback2" id="inlineRadio8" value="3">
+    <label for="inlineRadio8">3</label>
+
+    <input type="radio" name="feedback2" formControlName="feedback2" id="inlineRadio9" value="4">
+    <label for="inlineRadio9">4</label>
+
+    <input  type="radio" name="feedback2" attributes="{'checked' :res[0].feedback1 ==='5'}" formControlName="feedback2" id="inlineRadio10" value="5">
+    <label for="inlineRadio10">5</label>
+</div>
+    <h5>3.Would you refer this docter to others</h5>
+    <div class="card-body">
+        <input  type="radio" name="feedback3" formControlName="feedback3" id="inlineRadio11" value="1">
+        <label  for="inlineRadio11">1</label>
+
+        <input type="radio" name="feedback3" formControlName="feedback3" id="inlineRadio12" value="2">
+        <label for="inlineRadio12">2</label>
+
+
+        <input type="radio" name="feedback3" formControlName="feedback3" id="inlineRadio13" value="3">
+        <label  for="inlineRadio13">3</label>
+
+        <input type="radio" name="feedback3" formControlName="feedback3" id="inlineRadio14" value="4">
+        <label for="inlineRadio44">4</label>
+
+        <input  type="radio" name="feedback3" attributes="{'checked' :res[0].feedback1 ==='5'}" formControlName="feedback3" id="inlineRadio15" value="5">
+        <label for="inlineRadio15">5</label>
+    </div>
+        <h5>4.How Satisfied are you with the process of booking appoi</h5>
+        <div class="card-body">
+            <input  type="radio" name="feedback4" formControlName="feedback4" id="inlineRadio16" value="1">
+            <label  for="inlineRadio16">1</label>
+    
+            <input type="radio" name="feedback4" formControlName="feedback4" id="inlineRadio17" value="2">
+            <label  for="inlineRadio17">2</label>
+    
+    
+            <input type="radio" name="feedback4" formControlName="feedback4" id="inlineRadio18" value="3">
+            <label for="inlineRadio18">3</label>
+    
+            <input  type="radio" name="feedback4" formControlName="feedback4" id="inlineRadio19" value="4">
+            <label  for="inlineRadio19">4</label>
+    
+            <input  type="radio" name="feedback4" attributes="{'checked' :res[0].feedback1 ==='5'}" formControlName="feedback4" id="inlineRadio20" value="5">
+            <label  for="inlineRadio20">5</label>
+        </div>
+            <h5>5.Additional Comments</h5>
+            <div>
+                <textarea rows="5" cols="50" formControlName="comments"></textarea>
             </div>
-    
-            
-            <div class="container mt-5" >
-             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel" >FeedBack Form</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                </div>
-              
-    
-            
-      
-             
+            <button type="submit" class="submit-button" type="submit" (click)=" addFeedback()" >Submit</button>     
+            <button type="submit" class="cancel-button"type="button">Cancel</button>
+        </div> 
+        </form>
+    </div>
+  </div>
+</div>
+
+

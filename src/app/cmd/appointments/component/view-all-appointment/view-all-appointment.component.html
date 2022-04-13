@@ -25,8 +25,8 @@
                         </div>
                         <div class="row links">
                             <a class="col-6 hyperlinks" href="/patient-details">View Detail</a>
-                            <a *ngIf ="appointment.feedbackGiven === 'false'" class="col-6 hyperlinks">Give feedback</a>
-                            <a *ngIf ="appointment.feedbackGiven === 'true'" class="col-6 hyperlinks" href="viewfeedback">View feedback</a>
+                            <a *ngIf ="appointment.feedbackGiven === 'false'" class="col-6 hyperlinks" (click) = "checkFeed(appointment)">Give feedback</a>
+                            <a *ngIf ="appointment.feedbackGiven === 'true'" class="col-6 hyperlinks" (click)="checkFeed(appointment)" >View feedback</a>
                         </div>
                     </div>
                 </div>
@@ -34,4 +34,4 @@
         </div>
         </div>
   </main>
-  <!--Main layout-->
+  <!--Main layout-->    
