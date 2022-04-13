@@ -10,6 +10,7 @@ import { AppointmentsService } from '../../appointments.service';
   styleUrls: ['./view-all-appointment.component.scss']
 })
 export class ViewAllAppointmentComponent implements OnInit {
+  
   patinentsAppointmentList :any;
 
   constructor(private appoinmentService:AppointmentsService, private _titleService: Title) { }
