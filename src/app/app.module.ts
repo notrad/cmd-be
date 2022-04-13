@@ -19,10 +19,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { RoleGuard } from './core/guards/role.guard';
 
-
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ViewAllPatientComponent } from './cmd/patients/components/view-all-patient/view-all-patient.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 @NgModule({
   declarations: [
     AppComponent
