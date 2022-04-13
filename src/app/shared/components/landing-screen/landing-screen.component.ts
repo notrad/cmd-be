@@ -84,12 +84,7 @@ export class LandingScreenComponent implements OnInit {
         next: (res) => {
           this._spinner.hide();
           this._authService.UserData = res;
-          console.log('role',this.loginForm.controls['role'].value);
-          if(this.loginForm.controls['role'].value === 'doctor'){
-            this._router.navigate(['dashboard']);
-          }else if(this.loginForm.controls['role'].value === 'patient'){
-            this._router.navigate(['allAppointments']);
-          }
+          
           //clear form and reset the values after submission
           form.reset();
           this.formSubmitted = false;
@@ -97,8 +92,13 @@ export class LandingScreenComponent implements OnInit {
           this.passwordPlaceholder = 'Password';
           this.loginForm.setValue({ email: null, password: null, role: 'doctor' });
 
-          // reroute base on user role
-          // this._router.navigate(['']);
+
+          if(localStorage["user_role"] === 'doctor'){
+            this._router.navigate(['']);
+          }else if(localStorage["user_role"] === 'patient'){
+            this._router.navigate(['allAppointments']);
+          }
+
         },
         error: (err) => {
           this._spinner.hide();

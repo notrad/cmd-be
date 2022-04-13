@@ -1,47 +1,6 @@
-<header>
-    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
-        <label class="doc">Connect my Doc</label>
-      <div class="position-sticky">
-        <div class="list-group list-group-flush mx-3 ">
-          <a class="list-group-item list-group-item-action py-2 ripple dashboardmenu">
-            <span>Dashboard</span></a>
-          <a class="list-group-item list-group-item-action py-2 ripple chartRoom">
-            <span class="spacing">Chart Room</span></a>
-        </div>
-      </div>
-    </nav>>
-    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top fix-top">
-      <div class="container-fluid">
-        <ul class="navbar-nav ms-auto d-flex flex-row">
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
-              href="#" 
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-mdb-toggle="dropdown"
-              aria-expanded="true">
-             
-              <label class="name">Sam Watson</label>
-                <img
-                    src="../../../../../assets/images/avatar.PNG"
-                    class="rounded-circle"
-                    height="22"
-                    alt="Avatar"
-                    loading="lazy"/>
-                    <!-- <select>
-                      <option value="volvo">Logout</option>
-                      
-                    </select> -->
-                   
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  
-  <!--Main layout-->
+<app-top-header></app-top-header>
+<app-sidebar></app-sidebar>
+<!--Main layout-->
   <main class ="main-style" >
   
     <div class="container-fluid appointments-container">
@@ -65,8 +24,8 @@
                             <p class="col-6  appoint-date" >{{appointment.date}}</p>
                         </div>
                         <div class="row links">
-                            <a class="col-6 hyperlinks">View Detail</a>
-                            <a class="col-6 hyperlinks">Give feedback</a>
+                            <a class="col-6 hyperlinks" href="/patient-details">View Detail</a>
+                            <a class="col-6 hyperlinks" href="viewfeedback">Give feedback</a>
                         </div>
                     </div>
                 </div>

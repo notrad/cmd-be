@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
   userSettingsVisibility: string = '';
   loggedInUserRole: string = '';
+  dashboardPath: string = ''
 
   constructor() { }
 
@@ -15,8 +16,10 @@ export class SidebarComponent implements OnInit {
     this.loggedInUserRole = localStorage['user_role'];
     if(this.loggedInUserRole == 'doctor'){
         this.userSettingsVisibility = 'block';
+        this.dashboardPath = '/dashboard';
     } else {
       this.userSettingsVisibility = 'none';
+      this.dashboardPath = '/allAppointments'
     }
   }
 

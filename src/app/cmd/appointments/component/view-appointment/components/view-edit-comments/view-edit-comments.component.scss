@@ -1,49 +1,44 @@
-.btn-primary{
-    margin-left: 82%; 
-    padding-top: 1%; 
-    padding-bottom: 1%; 
-    text-align: center; 
-    background-color: rgb(7, 7, 109);
-    color: cornsilk;
-  }
-  .btn-primary1{
-    background-color: rgb(7, 7, 109);
-    align-items: left;
-    color: cornsilk;
-    margin-right: 10px;
-  }
-  .input-data{
-    height: 40px;
-    width: 100px; 
-    position: relative;
-
-  }
-  #block{
-    border: none; 
-    outline: none;
-    font-size: 17px; 
-    border-bottom:2px solid rgb(32, 14, 100) ;
-    max-height:"100%";
-    width: 29rem; 
-
-  }
-  .wrapper{
-    margin-top: 10%;
-  }
-  #comment{
-    position: absolute; 
-    bottom: 20px; 
-    left: 0; 
-    color: gray; 
-    pointer-events: none;
-
-  }
-  .modal-footer{
+.card{
+    margin-top: 0%;
+      height: 5%;
+      width:100%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    text-align: left;
+    border-radius: 3%;
+    box-shadow: 0px 0px 5px rgb(87, 86, 85);
+    }
     
-    width: 31rem;
-
-  }
-  #footer{
-    display: flex;
-    margin-right: 65%;
-  }
+    .row{
+      margin-left: 0%; //changed
+    }
+    
+    
+    .card .line{
+      border-bottom: 2px solid  black;
+      height: 20px;
+      width: 100%;
+     border: none;
+     background-color: transparent;
+     margin-bottom: 10px;
+     
+    }
+    
+    input[type="text"][readonly]{
+      border-bottom: 2px solid  black;
+       border: none;
+       height: 20px;
+      width: 100%;
+      background-color: transparent;
+    }
+    
+    #btn {
+      font-style: white;
+      background-color: #34495e;
+    }
+    
+    #save:active {
+      background-color: white;
+      color: blueviolet;
+   }
+  

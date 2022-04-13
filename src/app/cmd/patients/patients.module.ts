@@ -18,6 +18,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     MatInputModule,
     MatDialogModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    Ng2SearchPipeModule,
+    NgxPaginationModule,
   ]
 })
 export class PatientsModule { }

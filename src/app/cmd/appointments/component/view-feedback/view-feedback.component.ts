@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-view-feedback',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-feedback.component.scss']
 })
 export class ViewFeedbackComponent implements OnInit {
- 
+  form = new FormGroup({});
  
 
   constructor() { }
@@ -15,5 +15,7 @@ export class ViewFeedbackComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
+  onSudmit(){
+    console.log(this.onSudmit);
+  }
 }

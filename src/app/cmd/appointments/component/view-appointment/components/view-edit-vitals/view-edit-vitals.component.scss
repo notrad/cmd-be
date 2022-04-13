@@ -1,0 +1,147 @@
+body{
+    background-color: gray;
+}
+h2 {
+    color: #191970;
+    font-weight: bold;
+}
+#save {
+    background-color: #191970;
+}
+h5 {
+    color: #191970;
+}
+.container{
+    padding: 0%;
+
+}
+.form-card {
+    width: 200;
+    min-height: 200px;
+    max-width: 43rem;
+    padding: 0%;
+    border-radius: 20px;
+    background-color: white;
+    margin: 2rem auto;
+}
+#btn{
+    font-style: white;
+    background-color: #34495E;
+    transition: 10s;
+}
+#save:active {
+    background-color: white;
+    color: black;
+    
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.child2 {
+    text-align: center;
+}
+.content-area {
+    background: #fff;
+    border: 1px solid #E2E2E2;
+    padding: 50px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#icon {
+    color : red;
+    fill: currentColor;
+}
+
+.inputs{
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    position: center;
+    justify-content: space-between;
+    place-items: center;
+    }
+    
+#ECG, #Di {
+    width: 60px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    position: center;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    
+}
+#temp1 {
+    width: 70px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    position: center;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    
+}
+#RR {
+    width: 120px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    position: center;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#ecg, #temp, #diab, #res {
+    margin-left:10px;
+    color: gray;
+    position: center;
+}
+.p1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input[type="text"],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+#diab {
+    text-align: center;
+}
+.st0 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #393939;
+}
+
+.st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #D8453E;
+}
+
+.ture, .tes, .rate, .center{
+    text-align: center;
+    align-items: center;
+}
+.container-fluid {
+    align-items: center;
+    place-items: center;
+}
+
+#path {
+    fill: currentColor;
+}
+
+.form-card .line input[type="text"][readonly] {
+    border-bottom: 1px solid rgba(0, 0, 0, 0)
+}

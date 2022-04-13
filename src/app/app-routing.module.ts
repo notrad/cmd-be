@@ -16,6 +16,13 @@ import { ViewEditCommentsComponent } from './cmd/appointments/component/view-app
 import { AddPrescription } from './services/addPrescription.service';
 import { AddPrescriptionComponent } from './cmd/chat/components/view-suggest-prescription/components/add-prescription/add-prescription.component';
 import { ViewAllAppointmentComponent } from './cmd/appointments/component/view-all-appointment/view-all-appointment.component';
+import { ViewFeedbackComponent } from './cmd/appointments/component/view-feedback/view-feedback.component';
+import { RoleGuard } from './core/guards/role.guard';
+import { ViewAllPatientComponent } from './cmd/patients/components/view-all-patient/view-all-patient.component';
+import { ViewAppointmentComponent } from './cmd/appointments/component/view-appointment/view-appointment.component';
+import { ViewEditTestComponent } from './cmd/appointments/component/view-appointment/components/view-edit-test/view-edit-test.component';
+import { ViewEditVitalsComponent } from './cmd/appointments/component/view-appointment/components/view-edit-vitals/view-edit-vitals.component';
+import { ViewEditRecommendationComponent } from './cmd/appointments/component/view-appointment/components/view-edit-recommendation/view-edit-recommendation.component';
 
 const routes: Routes = [
   {
@@ -23,35 +30,78 @@ const routes: Routes = [
     component:LandingScreenComponent
   },
   {
+    path:"viewfeedback", 
+    component: ViewFeedbackComponent
+  },
+  {
+    path:"all-patients",
+    component:ViewAllPatientComponent
+  },
+  {
     path:"account-settings",
     canActivate: [AuthGuard],
     component:ViewEditAccountSettingComponent
   },
   {
-    path:"view",
+    path:"view-edit-comment",
+    canActivate: [AuthGuard],
+    component:ViewEditCommentsComponent,
+    pathMatch: "full"
+  },
+  {
+    path:"view-edit-test",
+    canActivate: [AuthGuard],
+    component:ViewEditTestComponent,
+    pathMatch: "full"
+  },
+  {
+    path:"view-edit-vitals",
+    canActivate: [AuthGuard],
+    component:ViewEditVitalsComponent,
+    pathMatch: "full"
+  },
+  {
+    path:"view-edit-recommand",
+    canActivate: [AuthGuard],
+    component:ViewEditRecommendationComponent,
+    pathMatch: "full"
+  },
+  {
+    path:"view-all-prescription",
+    canActivate: [AuthGuard],
     component:ViewAllPrescriptionComponent,
+    pathMatch: "full"
+  },
+  {
+    path:"view",
+    canActivate: [AuthGuard],
+    component:ViewAppointmentComponent,
     pathMatch: "full"
   },
   {
     path:"",
     component:DashboardComponent,
-    canActivate: [AuthGuard],
+    canActivate: [RoleGuard],
     pathMatch: "full"
   },
   {
     path: "dashboard",
     component: DashboardComponent,
-    canActivate: [AuthGuard],
+    canActivate: [RoleGuard],
     pathMatch: "full"
   }, 
   {
     path: "patient-details",
     canActivate: [AuthGuard],
     component: PatientInfoComponent,
-
     pathMatch: "full"
   }, 
-  {path:'allAppointments', component:ViewAllAppointmentComponent},
+  {
+    path:'allAppointments', 
+    canActivate: [AuthGuard],
+    component:ViewAllAppointmentComponent,
+    pathMatch: "full"
+  },
   {
     path:"cmd",
     canActivate: [AuthGuard],

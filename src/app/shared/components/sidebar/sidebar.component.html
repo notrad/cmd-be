@@ -7,13 +7,13 @@
     </div>
     <ul class="sidebar_list">
        <li>
-          <a routerLink="/">
+          <a [routerLink]="dashboardPath">
           <i class='bx bxs-bar-chart-alt-2'></i>
           <span class="list_name">Dashboard</span>
           </a>
        </li>
        <li [style.display]="userSettingsVisibility">
-          <a>
+          <a routerLink="/all-patients">
           <i class='bx bxs-user'></i>
           <span class="list_name">Patients</span>
           </a>
