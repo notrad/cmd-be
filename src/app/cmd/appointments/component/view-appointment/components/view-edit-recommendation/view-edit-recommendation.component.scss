@@ -1,0 +1,59 @@
+.head{
+    border: 1px solid black;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px;
+    width: 80%;
+    height: 250px;
+    border-radius: 10px;
+    margin-top: 200px;
+    margin-left: 10px;
+}
+.head2{
+    color: darkblue;
+    font-size: 20px;
+    padding-bottom: 10px;
+    box-shadow: gray;
+    padding-top: 25px;
+}
+.search-s{
+    color: darkblue;
+    width: 40%;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    flex: 0 2 24%; 
+}
+.issuestyle{
+    width: 150px;
+    height: 30px;
+    padding-top: 8px;
+    font-size: 10px; 
+}
+.deflex{
+    top: -16px;
+    right: -55px;
+    position: relative;
+  
+}
+    
+.alert-dark {
+    color: #141619;
+    background-color:white;
+    border-color: #bcbebf;
+    border-radius: 10px;
+}
+.container.head{
+    padding-bottom: 40px;
+    height: auto;
+    padding-right: 10px;
+    margin: 0% 0% 0% 22%;
+}
+.move{
+    height: -5px;
+    
+}
+
+

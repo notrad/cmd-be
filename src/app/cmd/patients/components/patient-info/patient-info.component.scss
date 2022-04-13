@@ -1,10 +1,11 @@
 .topmargin{
-    margin-left: 12.5%; //added after merge
+    margin-left: 13.2%; //added after merge
+    width: 87%;
 }
 .patient_info{
     height: 10rem;
-    width: 100%;
-    margin-left: 5%; // added after merge
+    width: 95%;
+    margin-left: 9.6%; // added after merge
 }
 
 .image{
@@ -37,7 +38,9 @@
     margin: 25% 21% 21% 15%;
 }
 
-
+.fsize{
+    font-size: small;
+}
 
 i{
     color: rgb(91, 172, 204);
@@ -70,7 +73,7 @@ i{
 
 
 .head{
-    margin-left: 7%;
+    margin-left: 11%;
     margin-top: 3%;
     color: rgb(5, 5, 66);  
     font-size: xx-large;
@@ -85,6 +88,7 @@ i{
 }
 .col1{
     margin-left: 80px;
+    transform: scale(0.8);
 }
 .ccol{
     flex:33.3;
@@ -92,9 +96,13 @@ i{
 }
 .col2{
     margin-top: 3%;
+    transform: scale(0.8);
+    margin-left: -5%;
 }
 .col3{
     margin-top: 0%;
+    transform: scale(0.8);
+    margin-left: -5%;
 }
 
 

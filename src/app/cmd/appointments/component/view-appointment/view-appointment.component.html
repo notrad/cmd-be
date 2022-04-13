@@ -1,1 +1,127 @@
-<p>view-appointment works!</p>
+<div class="colo">
+<div class="container"><app-sidebar></app-sidebar></div>
+<div class="container tophead"><app-top-header></app-top-header></div>
+
+
+<app-view-close-appointment></app-view-close-appointment>
+
+<div class="container row">
+  <div class="row rowcol">
+    <div class="col-6" *ngFor="let p of patientlist">
+      <div class="card-body">
+        <div class="card mb-2 cardstruct">
+          <div class="row g-2">
+            <div class="col-md-2 doctor">
+              <img src="../../assets/patient.jpg" class="doctor" alt="Doctor">
+            </div>
+            <div class="col-md-6 top">
+              <div class="card-body ">
+                <!--Patient<br>-->
+                <span class="text-muted ">Patient</span><br>
+                <h5 class="card-title ">{{p.Name}}</h5>
+                <p>{{p.Gender }},{{p.Age }} </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 inmar">
+                <i class="fa fa-phone icon" aria-hidden="true" id="tel"></i>
+                {{p.Contact}} <br>
+                <i class="fa fa-envelope icon" aria-hidden="true"></i>
+
+                {{p.Email}}
+              </div>
+
+              <div class="col-1 ">
+                <div class="d-flex">
+                  <div class="vr"></div>
+                </div>
+              </div>
+              <div class="col-5 docard ">
+                <i class="fa fa-calendar icon" aria-hidden="true" id="tel"></i>
+                {{p.DOB}}<br>
+                <i class="fa fa-tint icon" aria-hidden="true"></i>
+
+                {{p.BloodGroup}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-5" *ngFor="let d of doctorlist">
+
+      <div class="card-body  bodymrg">
+        <div class="card mb-2 cardstruct">
+          <div class="row g-2">
+            <div class="col-md-2 doctor">
+
+              <img src="../../../../../assets/doctor.jpg" class="doctor" alt="Doctor">
+
+            </div>
+            <div class="col-md-6 top">
+              <div class="card-body">
+                <!--Doctor <br>-->
+                <span class="text-muted ">Doctor</span><br>
+                <h5 class="card-title">{{d.Name}}</h5>
+                <p>{{d.Speciality}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 inmar">
+                <i class="fa fa-phone icon" aria-hidden="true" id="tel"></i>
+                {{d.Contact}} <br>
+                <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                {{d.Email}}
+              </div>
+              <div class="col-1 ">
+                <div class="d-flex">
+                  <div class="vr"></div>
+                </div>
+              </div>
+              <div class="col-4 docright">
+                <span class="text-muted docard">NPI No.</span><br>
+                {{d.Npino}}<br>
+                <span class="text-muted docard">Practice Location</span><br>
+                {{d.PracticeLocation}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="container edit-cont">
+    <app-view-edit-comments></app-view-edit-comments>
+  </div>
+  <div class="container crow" style="margin-top: 2%;">
+    <div class="ccol">
+      <app-view-edit-recommendation></app-view-edit-recommendation>
+    </div>
+    <div class="ccol vital-cont">
+      <app-view-edit-vitals></app-view-edit-vitals>
+    </div>
+  </div>
+  <div class="container pre-test-cont crow">
+    <div class="ccol">
+      <app-view-all-prescription></app-view-all-prescription>
+    </div>
+    <div class="ccol edit-test">
+      <app-view-edit-test></app-view-edit-test>
+    </div>
+  </div>
+
+</div>
+
+</div>

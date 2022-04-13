@@ -1,0 +1,111 @@
+
+.tophead{
+    margin-left: 13.6%;
+    width: 85%;
+}
+.cardstruct{
+
+    width: 150px;
+    min-height:150px;
+    min-width:23rem;
+    
+   border: 0.5px solid lightgrey;
+
+}
+.doctor{
+    vertical-align: middle;
+        width: 60px;
+        height: 60px;
+        border-radius:60%;
+        margin: 8px;
+}
+.docard{
+    font-size:70%;
+    margin-left: -3%;
+    margin-top: -7%;
+    
+} 
+.docright{
+    margin-top: -30px;
+    font-size: 70%;
+    margin-left: -3%;
+}
+.rowcol{
+    margin: 0 auto;
+    float: left;
+    padding:1px;
+    color:midnightblue;
+    margin-left: 15%;
+}
+.bodymrg{
+    margin-left: -24px;
+}
+.top{
+    margin-top: -0.5%;
+}
+.icon{
+    color:grey;
+}
+
+.inmar{
+    margin-left: 3%;
+    font-size:70%;
+    margin-right: -4%;
+    margin-top: -5%;
+}
+.d-flex{
+    height: 60px;
+    color: gray;
+    margin-top: -30px;
+    
+}
+.card-title{
+    font-weight: bold;
+    color:#191970;
+    font-size: 80%;
+}
+#tel {
+    line-height: 25px;
+}
+
+.text-muted{
+    font-size: 70%;
+    color:gray;
+    }
+p{
+    font-size: 70%;
+    margin-top: -3%;
+}
+
+
+
+
+.crow{
+    display: flex;
+}
+.ccol{
+    flex:50%;
+
+}
+
+
+
+
+.vital-cont{
+    margin-left: 5%;
+    transform: (scale(0.8));
+}
+
+.edit-cont{
+    margin-top: 2%;
+    
+    width: 80%;
+}
+
+.edit-test{
+    margin-right: 15%;
+}
+
+.pre-test-cont{
+    margin-left: 10%;
+}

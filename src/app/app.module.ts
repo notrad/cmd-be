@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { RoleGuard } from './core/guards/role.guard';
 
 import { NgxPaginationModule } from 'ngx-pagination';
@@ -41,8 +43,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatFormFieldModule,
     MatIconModule,
     MatAutocompleteModule,
+    ModalModule.forRoot(),
     Ng2SearchPipeModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatDatepickerModule
 
   ],
   providers: [

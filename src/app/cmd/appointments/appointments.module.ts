@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 import { AppointmentTilesComponent } from './component/appointment-tiles/appointment-tiles.component';
 import { ViewAllAppointmentComponent } from './component/view-all-appointment/view-all-appointment.component';
@@ -17,7 +20,8 @@ import { AppointmentSchudleComponent } from './component/add-appointment/compone
 import { AppointmentConfirmationComponent } from './component/add-appointment/components/appointment-confirmation/appointment-confirmation.component';
 import { ViewFeedbackComponent } from './component/view-feedback/view-feedback.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ViewCloseAppointmentComponent } from './component/view-appointment/components/view-close-appointment/view-close-appointment.component';
 
 
 
@@ -37,17 +41,24 @@ const COMPONENT = [
   AppointmentSchudleComponent,
   AppointmentConfirmationComponent,
   ViewFeedbackComponent,
+
   
 ];
 
 @NgModule({
   declarations: [
-    ...COMPONENT
+    ...COMPONENT,
+    ViewCloseAppointmentComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
+    FormsModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  
   ],
   exports:[
     ViewAllAppointmentComponent

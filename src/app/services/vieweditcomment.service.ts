@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { commentList } from '../cmd/appointments/component/view-appointment/components/view-edit-comments/commentlist.module';
+import { commentList } from '../cmd/appointments/component/view-appointment/components/view-close-appointment/commentlist.module';
 
 @Injectable({
   providedIn: 'root'

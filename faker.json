@@ -1,4 +1,34 @@
 {
+  "viewAllPrescription": [
+    {
+      "id": "1",
+      "duration": "1",
+      "Medicine": "2.Crocin",
+      "cycle": "M-A-N",
+      "description": "Dont use hot water during consume"
+    },
+    {
+      "Medicine": "vicks",
+      "duration": 2,
+      "cycle": "MAN",
+      "description": "Dont use hot water",
+      "id": "zi4yj7J"
+    },
+    {
+      "Medicine": "1.Citrezen",
+      "duration": "",
+      "cycle": "MAN",
+      "description": "Drink more water",
+      "id": "V5Z8d6o"
+    },
+    {
+      "Medicine": "vicks",
+      "duration": 22,
+      "cycle": "asd",
+      "description": "asdd",
+      "id": "k9nhyMy"
+    }
+  ],
   "appointmentList": [
     {
       "name": " Emma Watson(31)",
@@ -659,6 +689,61 @@
       "value": "read 5",
       "doctorName": "doc 5",
       "id": 7
+    }
+  ],
+  "patientlist": [
+    {
+      "Name": "Peter Thanos",
+      "Contact": 9123543286,
+      "Gender": "Male",
+      "DOB": "26 September,1995",
+      "Age": " Age 26",
+      "Email": "peterthanos@example.com",
+      "BloodGroup": "O +ve",
+      "Allergies": " None",
+      "Activeissues": "None",
+      "MedicalProblems": "None"
+    }
+  ],
+  "doctorlist": [
+    {
+      "Name": "Dr.Sammy Winchester",
+      "Contact": 9123543286,
+      "Email": "peterthanos@example.com",
+      "Speciality": "Cardiologist",
+      "Npino": 6598456798,
+      "PracticeLocation": "Bangalore,India"
+    }
+  ],
+  "add-comment": [],
+  "View-vitals": [
+    {
+      "ECG": "",
+      "Tempreture": "",
+      "Diabetes": "",
+      "Respiration_rate": "",
+      "id": 1
+    },
+    {
+      "ECG": "02",
+      "Tempreture": "89",
+      "Diabetes": "76",
+      "Respiration_rate": "78",
+      "id": 2
+    },
+    {
+      "ECG": "",
+      "Tempreture": "",
+      "Diabetes": "",
+      "Respiration_rate": "",
+      "id": 3
+    },
+    {
+      "ECG": "10",
+      "Tempreture": "17",
+      "Diabetes": "27",
+      "Respiration_rate": "1010",
+      "id": 4
     }
   ]
 }

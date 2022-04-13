@@ -1,1 +1,26 @@
-<p>view-edit-recommendation works!</p>
+<div class="container head">
+    <div class="row">
+        <div >
+           <h2 class="head2"> <label>{{patientSelected}} Recommendation</label></h2><br>
+        </div><br>
+        <div class="search-s" >
+            <label>{{patientSelected}} Search</label><br>
+            <div>
+                <div class="move">
+                <select #mySelect (change)='AddIssueList(mySelect.value)' class="form-control" id="pCategory"
+                    name="pCategory" [(ngModel)]="patientIssueSelected">
+                    
+                    <option *ngFor="let c of Issues" id="liveToastBtn">{{ c }}</option>
+                
+                </select>
+                </div>
+          <br><br>
+                
+            </div>
+        </div>
+        <div class="col-2 cards" *ngFor="let issue of patientIssueList; index as i ">
+            <div class="alert alert-dark issuestyle" role="alert">
+                {{issue}} <button type="button" class="btn-close deflex" aria-label="Close" (click)="deleteIssue(i)"></button>
+            </div>
+        </div>
+    </div>
