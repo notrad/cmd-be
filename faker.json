@@ -36,8 +36,8 @@
       "date": "12/06/2019",
       "issue": "Heart Related issue ",
       "isconfirmed": true,
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-1": "Closed"
     },
     {
       "name": " Emma Watson(31)",
@@ -45,8 +45,8 @@
       "date": "12/06/2019",
       "isconfirmed": true,
       "issue": "Leg injury ",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-1": "Closed"
     },
     {
       "name": "Emma Watson(31)",
@@ -54,8 +54,8 @@
       "date": "16/06/2019",
       "isconfirmed": false,
       "issue": "Hand injury",
-      "status": "All",
-      "status-1": "Cancelled"
+      "status": "Confirmed",
+      "status-1": "Confirmed"
     },
     {
       "name": " Emma Watson(31)",
@@ -63,8 +63,8 @@
       "date": "16/06/2019",
       "isconfirmed": true,
       "issue": "Hand injury",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-2": "Closed"
     },
     {
       "name": " Emma Watson(31)",
@@ -72,8 +72,8 @@
       "date": "12/06/2019",
       "isconfirmed": true,
       "issue": "Heart Related issue ",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-2": "Closed"
     },
     {
       "name": " Emma Watson(31)",
@@ -81,8 +81,8 @@
       "date": "12/06/2019",
       "isconfirmed": true,
       "issue": "Leg injury ",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-2": "Closed"
     },
     {
       "name": "Emma Watson(31)",
@@ -90,8 +90,8 @@
       "date": "16/06/2019",
       "isconfirmed": false,
       "issue": "Hand injury",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Cancelled",
+      "status-3": "Cancelled"
     },
     {
       "name": " Emma Watson(31)",
@@ -99,8 +99,8 @@
       "date": "16/06/2019",
       "isconfirmed": true,
       "issue": "Hand injury",
-      "status": "All",
-      "status-1": "Confirmed"
+      "status": "Closed",
+      "status-3": "Closed"
     }
   ],
   "viewallappointment": [
@@ -629,12 +629,6 @@
     }
   ],
   "editSymptoms": [
-    {
-      "symptomName": "Fever",
-      "value": "104 Degree",
-      "doctorName": "Ajay",
-      "id": 1
-    },
     {
       "symptomName": "Itching",
       "value": "Read 1",

@@ -21,8 +21,8 @@ export class DashboardComponent implements OnInit {
   selectedValue: string = '';
   imageurl='https://www.unwomen.org/sites/default/files/Headquarters/Images/Sections/Partnerships/GoodwillAmbassadors/Emma-Watson-headshot-2016_300pxTall.jpg?la=en';
   employeeDataObserver: Subscription = new Subscription;
-
- 
+  public options =[{'label':'All',value:'All'},{'label':'Confirmed',value:'status-1'},{'label':'Cancelled',value:'status-2'},{'label':'Closed',value:'status-3'}]
+  selectStatus:any
     
 
   constructor(private _doctorAppointmentsList: DashboardDoctorAppointmentsService, private _titleService: Title) { 
@@ -79,7 +79,7 @@ export class DashboardComponent implements OnInit {
 
 
   userData:any=[
-    {PatientName:"Peter Tanos(36)",
+    {PatientName:"Emma Watson(31)",
      Injury:"Heart related issues",
       Date:"12/06/2019",
       Time:"10:30",
@@ -89,18 +89,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this._titleService.setTitle('Dashboard | CMD');
-    this.employeeDataObserver = this._doctorAppointmentsList.getDoctorAppointmentList().subscribe(
-      {
-        next: (response) => {
-          this.patinentsAppointmentList = response;
-        },
-
-        error: (error) => {
-          console.log(error);
-        }
-      }
-
-    );
+    this.fetchappointmentRecords('All')
   }
   cancelledNumber=0;
   acceptednumber=0;
@@ -113,4 +102,41 @@ export class DashboardComponent implements OnInit {
    this.cancelledNumber=this.cancelledNumber+1;
    this.totalnumber=this.cancelledNumber+this.acceptednumber;
  }
+
+changeMethod(option:any){
+ // const filterTasks = (taskArray, obj) => taskArray.filter( task => Object.keys(task).some( key => obj[key] && obj[key]==task[key]));
+console.log(option)
+console.log(this.selectStatus)
+this.filterarr(this.selectStatus)
+
+}
+
+filterarr(data:any){
+   //const filterTasks = (taskArray:any, obj:any) => taskArray.filter( (task:any) => Object.keys(task).some( key => obj[key] && obj[key]==task[key]));
+   this.fetchappointmentRecords(data)
+   
+}
+fetchappointmentRecords(isfilter?:any){
+
+  this.employeeDataObserver = this._doctorAppointmentsList.getDoctorAppointmentList().subscribe(
+    {
+      next: (response) => {
+        if(isfilter=="All"){
+          this.patinentsAppointmentList = response;
+         
+   
+        }else{
+          this.patinentsAppointmentList = response.filter((e:any)=>e.status===isfilter);
+        }
+      
+      },
+
+      error: (error) => {
+        console.log(error);
+      }
+    }
+
+  );
+}
+
 }

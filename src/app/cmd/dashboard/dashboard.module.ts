@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -18,6 +18,7 @@ import { RouterModule, ROUTES, Routes } from '@angular/router';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     DashboardRoutingModule,
     MatDialogModule,
     MatSelectModule,

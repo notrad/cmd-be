@@ -36,12 +36,9 @@
         </div>
         <div class="demo-zone">
           <label>Filter: </label>
-          <select id="demoShort2">
-            <option value="All" selected disabled hidden>All</option>
-            <option value="All">All</option>
-              <option value="Confirmed">Confirmed</option>
-              <option value="Canceled">Cancelled</option>
-              <option value="Closed" >Closed</option>
+          <select id="demoShort2" class="shortfilter" name="selectshortfilter" (change)="changeMethod($event)" [(ngModel)]="selectStatus" >
+            <option *ngFor="let option of options" [value]="option.label">{{option.label}}</option>
+           
               
           </select>
       </div>
@@ -86,7 +83,7 @@
                         <hr class="hrtag">
                         <div class="row" >
                             <a class="col-6 hyperlinks" href="view">View Detail</a>
-                            <a class="col-6 hyperlinks">Give feedback</a>
+                            <a class="col-6 hyperlinks">View feedback</a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +99,7 @@
 
 
   <div class="container">
-    <!-- <button type="button" class="accept" data-bs-target="#myModal" data-bs-toggle="modal"></button> -->
+    
   
   <div class="modal" id="myModal">
     <div class="modal-dialog">
@@ -127,7 +124,7 @@
           
         </div>
         </div>
-        <br>
+        
         <div class="row"> 
           <div class="col-6">
           <label class="form-label4">Injury: </label><br>
@@ -141,7 +138,7 @@
             
           </div>
           </div>
-          <br>
+         
   
           <div class="div5">
               <label class="form-label5">Tests: </label><br>
@@ -206,7 +203,7 @@
   
   
   <div class="container1">
-    <!-- <button type="button" class="decline" data-bs-target="#thirdModal" data-bs-toggle="modal"></button> -->
+   
   
     <div class="modal" id="thirdModal">
       <div class="modal-dialog">
