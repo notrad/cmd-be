@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 import { AppointmentTilesComponent } from './component/appointment-tiles/appointment-tiles.component';
 import { ViewAllAppointmentComponent } from './component/view-all-appointment/view-all-appointment.component';
@@ -51,7 +54,11 @@ const COMPONENT = [
     CommonModule,
     SharedModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+  
   ],
   exports:[
     ViewAllAppointmentComponent

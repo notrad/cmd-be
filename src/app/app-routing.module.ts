@@ -23,6 +23,7 @@ import { ViewAppointmentComponent } from './cmd/appointments/component/view-appo
 import { ViewEditTestComponent } from './cmd/appointments/component/view-appointment/components/view-edit-test/view-edit-test.component';
 import { ViewEditVitalsComponent } from './cmd/appointments/component/view-appointment/components/view-edit-vitals/view-edit-vitals.component';
 import { ViewEditRecommendationComponent } from './cmd/appointments/component/view-appointment/components/view-edit-recommendation/view-edit-recommendation.component';
+import { AddAppointmentComponent } from './cmd/appointments/component/add-appointment/add-appointment.component';
 
 const routes: Routes = [
   {
@@ -100,6 +101,12 @@ const routes: Routes = [
     path:'allAppointments', 
     canActivate: [AuthGuard],
     component:ViewAllAppointmentComponent,
+    pathMatch: "full"
+  },
+  {
+    path:'add-appointments', 
+    canActivate: [AuthGuard],
+    component:AddAppointmentComponent,
     pathMatch: "full"
   },
   {

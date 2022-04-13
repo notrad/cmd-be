@@ -1,1 +1,293 @@
-<p>add-appointment works!</p>
+
+<div class="container cnt">
+    <div [ngSwitch]="currentStep">
+        <h2 *ngSwitchCase="'1'">{{page1Heading}}</h2>
+        <h2 *ngSwitchCase="'2'">{{page2Heading}}</h2>
+        <h2 *ngSwitchCase="'3'">{{page3Heading}}</h2>
+        <h2 *ngSwitchCase="'4'">{{page4Heading}}</h2>
+
+    </div>
+    <!-- <h2 > {{page1Heading}}</h2> -->
+    <!-- Progressbar -->
+    <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        <div *ngFor="let step of steps" class="progress-step"
+            [class.progress-step-active]="compleatedSteps.includes(step) || currentStep == step"
+            (click)="goToStep(step)">
+            {{step}}
+        </div>
+    </div>
+
+    <!-- Progressbar steps -->
+
+    <!-- step-1 -->
+    <div *ngIf="currentStep == 1">
+        <div class="empty" style="width: 100%; height: 100%;">
+            <!-- <h2> {{page2Heading}}</h2>  -->
+            <div class="row" style="margin: 10px;">
+                <label>Patient </label><br>
+                <div class="col-4 dropdownContainer">
+
+                    <img class="req_temp" *ngIf="patientSelected==''" style="width:200px;"
+                        src="../../../../../assets/req.png" />
+
+                    <select class="form-control" [(ngModel)]="patientSelected" (click)="updateProgressBar()">
+                        <option value=""><span class="abc"> Search For Patient Via Name Or Phone</span>
+                        </option>
+
+                        <option style="margin-top:-20px;" *ngFor="let c of Names" [value]="c">{{ c }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container xyz">
+                <div class="text-center butsp">
+                    <button class="btn btn-success" *ngIf="patientSelected" (click)="nextStep()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </ng-template> -->
+
+    <!-- step-2 -->
+    <!-- <ng-template #elseBlock> -->
+    <div *ngIf="currentStep == 2">
+
+        <div class="row" style="width: 100%; height: 100%;">
+
+            <!-- <h2 > {{page2Heading}}</h2> -->
+            <div class="row">
+                <div class="col-4">
+                    <label>{{patientSelected}} Issues</label><br>
+                    <div>
+                        <select #mySelect (change)='AddIssueList(mySelect.value)' class="form-control" id="pCategory"
+                            name="pCategory" [(ngModel)]="patientIssueSelected" multiple>
+                            <option value=" "><span style="color: #ffffff;"> {{listValue}}</span>
+                            </option>
+                            <option *ngFor="let c of Issues" (click)="getValue(c)" id="liveToastBtn">{{ c }}
+
+                            </option>
+                        </select>
+                        <br><br>
+                        <div class="input-group input-group-sm col-4 mb-3">
+                            <input type="text" class="form-control inreason" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" placeholder="Or Enter Reason For Visit">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2" *ngFor="let issue of patientIssueList; index as i ">
+                    <div class="alert alert-dark issuestyle" style="height: fit-content;width: fit-content;"
+                        role="alert">
+                        {{issue}}
+                        <!-- <div class="container" style="height:80px; width:160px;"></div> -->
+                        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button> -->
+                        <button type="button" class="btn-close" aria-label="Close" (click)="deleteIssue(i)"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-success" *ngIf="patientIssueList!=[]" (click)="nextStep()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </ng-template> -->
+
+
+    <!-- step-3 -->
+    <div *ngIf="currentStep == 3">
+
+
+        <div class="container">
+
+            <h1>Choose Date and Time , Confirm Booking</h1>
+
+
+            <form action="#" class="form">
+                <hr><br>
+                <div>
+                    <div class="container1erty">
+                        <mat-card class="demo-inline-calendar-card">
+                            <mat-calendar [(selected)]="selected"></mat-calendar>
+                        </mat-card>
+
+
+                        <div>
+                            <div class="card12">
+                                <!-- <p>Selected date: {{selected}}</p> -->
+
+                                <!-- <mat-card-content>  -->
+                                <div>
+                                    <button class="button" style="padding-bottom: 25px;">11:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">11:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">12:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">12:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">1:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">1:30</button>
+                                    <br>
+                                    <button class="button" style="padding-bottom: 25px;">2:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">2:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">3:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">3:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">4:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">4:30</button>
+                                    <br>
+                                    <button class="button" style="padding-bottom: 25px; ">11:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">11:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">12:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">12:30</button>
+                                    <button class="button" style="padding-bottom: 25px;">1:00</button>
+                                    <button class="button" style="padding-bottom: 25px;">1:30</button>
+                                    <br>
+                                    <br>
+
+
+                                </div>
+                                <!-- </mat-card-content> -->
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <button class="btn btn-success" (click)="nextStep()">Confirm</button>
+    </div>
+    <!-- step-4 -->
+    <div *ngIf="currentStep == 4">
+
+
+
+
+        <div class="container">
+
+            <h3 class="one">Appointment Confirmation</h3>
+            <hr>
+            <div class="parent">
+                <div style="width: 40%;">
+                    <!-- <div class="leftsidecon"> -->
+                    <p class="patient">Patient</p>
+                    <div class="style">
+                        <img src="../../../../../assets/aaa.png">
+                        <div style="padding: 10px;">
+                            <h3 class="two">Nmark NZ(36)</h3><br>
+                            <p class="leg">Leg Injury</p>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <!-- <div style="border-right:3px solid black;"><hr></div>-->
+                    </div>
+
+                    <div class="box" style="text-align: center;">
+                        <div>
+                            <br>
+                            <h6 class="h6"> Appointment </h6>
+                        </div><br>
+                        <div>
+                            <h6 class="h6"> Severe the
+                                pain the left leg since two weeks </h6><br>
+                        </div>
+                        <!-- <div class="app-body"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+                        <form id="first_name"><div class="form-group"><label>Previous prescription</label><input type="text" class="form-control input-lg" /></div></form></div> -->
+                        <!-- <div class="form-group">
+                        <label>Previous prescription</label> -->
+                        <!-- <input type="text" class=""form-control input-sm/>
+        
+                     </div> -->
+                        <div>
+                            <!-- <div>Previous Prescription</div> -->
+                            <h6 class="h6"> Click here to Open </h6>
+
+                        </div><br>
+                    </div>
+
+                </div>
+                <div style="width: 20%;">
+                    <span class="calender"><i class="fa-regular fa-calendar-check"></i></span>
+                </div>
+
+                <div style="width: 40%;">
+                    <p style="margin-left:20px;font-size: 30px;color: gray;">PCP</p>
+                    <div
+                        style="display:flex;border:40px;margin-bottom:10px solid black;border-bottom:2px solid black;padding:10px;">
+                        <img src="../../../../../assets/aaa.png">
+                        <div style="padding: 10px;">
+                            <h3 class="two">Peter Thanos(36)</h3>
+                            <br>
+                            <p class="leg">Leg Specialist 19 yrs</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- <div class="verticalLine"> -->
+                    <div style="text-align: center;" class="box">
+
+
+                        <div>
+                            <br>
+                            <h6 class="h5"> Appointment </h6>
+                        </div><br>
+                        <div>
+                            <h6 class="h4">
+                                <p class="pcp">PCP Approval </p>
+                            </h6><br>
+                        </div>
+
+                        <div>
+                            <h6 class="h5"> 12/15 Completed </h6>
+                        </div><br>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="go">
+                <button class="button5" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go
+                    Back To Appointments</button>
+                <!-- Button trigger modal -->
+                <!-- <button type="button" >
+            Launch demo modal
+          </button> -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Are You Sure You want a book Appointment
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Make sure all Information you have entered is correct
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
